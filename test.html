@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楓幣K線圖</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    #chart {
+        width: 100%;
+        height: 600px; /* 調整高度以適應您需要的尺寸 */
+    }
+    /* 小型屏幕，例如手機 */
+    @media (max-width: 767px) {
+        #chart {
+            width: 100%;
+            height: 400px; /* 調整高度以適應較小的屏幕 */
+        }
+        /* 其他適應手機的CSS調整 */
+    }
+
+    /* 中型屏幕，例如平板 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        #chart {
+            width: 100%;
+            height: 500px; /* 調整高度以適應中等屏幕 */
+        }
+        /* 其他適應平板的CSS調整 */
+    }
+
+  </style>
+  
+</head>
+<body>
+
+    <div id="chart"></div>
+
+    <script>
+        // 使用假數據
+        var data = [
+          { date: '2023-08-06', open: '680.68', high: 752.587, low: 659.133, close: '740' },
+          { date: '2023-08-07', open: '700', high: 740, low: 660, close: '720' },
+          { date: '2023-08-08', open: '700', high: 730, low: 680, close: '700' },
+          { date: '2023-08-09', open: '724.365', high: 724.365, low: 679.611, close: '700' },
+          { date: '2023-08-10', open: '724.365', high: 730, low: 660, close: '710' },
+          { date: '2023-08-11', open: '730', high: 730, low: 660, close: '680' },
+          { date: '2023-08-12', open: '700', high: 715, low: 660.66, close: '700' },
+          { date: '2023-08-13', open: '710', high: 730, low: 622.641, close: '710' },
+          { date: '2023-08-14', open: '710', high: 730, low: 680, close: '680' },
+          { date: '2023-08-15', open: '705', high: 730, low: 622.641, close: '680' },
+          { date: '2023-08-16', open: '730', high: 750.75, low: 660.66, close: '700' },
+          { date: '2023-08-17', open: '681', high: 750.75, low: 670.67, close: '705' },
+          { date: '2023-08-18', open: '720', high: 720, low: 680, close: '710' },
+          { date: '2023-08-19', open: '720', high: 730, low: 600, close: '720' },
+          { date: '2023-08-20', open: '720', high: 730, low: 680, close: '730' },
+          { date: '2023-08-21', open: '688.679', high: 730, low: 622.641, close: '700' },
+          { date: '2023-08-22', open: '705.55', high: 730, low: 622.641, close: '700' },
+          { date: '2023-08-23', open: '720', high: 730, low: 670.67, close: '705' },
+          { date: '2023-08-24', open: '705', high: 725, low: 700, close: '700' },
+          { date: '2023-08-25', open: '700', high: 721, low: 670.67, close: '705' },
+          { date: '2023-08-26', open: '705.55', high: 730, low: 622.641, close: '720' },
+          { date: '2023-08-27', open: '710', high: 772.727, low: 670.67, close: '710' },
+          { date: '2023-08-28', open: '710', high: 730, low: 696.142, close: '710' },
+          { date: '2023-08-29', open: '710', high: 730, low: 670.67, close: '700' },
+          { date: '2023-08-30', open: '700', high: 800, low: 688.679, close: '715' },
+          { date: '2023-08-31', open: '700', high: 730, low: 700, close: '700' },
+          { date: '2023-09-01', open: '711', high: 725.075, low: 630.63, close: '700' },
+          { date: '2023-09-02', open: '630.63', high: 730, low: 630.63, close: '720' },
+          { date: '2023-09-03', open: '700', high: 730, low: 630.63, close: '720' },
+          { date: '2023-09-04', open: '720', high: 730, low: 700, close: '700' },
+          { date: '2023-09-05', open: '700', high: 740, low: 640.64, close: '700' }
+      ];
+
+
+        // 創建 K 線圖
+        var trace1 = {
+            x: data.map(d => d.date),
+            close: data.map(d => d.close),
+            high: data.map(d => d.high),
+            low: data.map(d => d.low),
+            open: data.map(d => d.open),
+            type: 'candlestick',
+            increasing: {line: {color: 'red'}},
+            decreasing: {line: {color: 'green'}}
+        };
+        var trace2 = {
+            x: data.map(d => d.date),
+            y: data.map(d => d.volume),
+            type: 'bar',
+            marker: {color: 'rgba(0,0,0,0.2)'},
+            yaxis: 'y2'
+        };
+
+        var layout = {
+            title: 'K線圖',
+            xaxis: {
+                type: 'category'
+            },
+            yaxis: {
+                title: '價格',
+                side: 'left'
+            },
+            yaxis2: {
+                title: '成交量',
+                overlaying: 'y',
+                side: 'right'
+            },
+            yaxis3: {
+                showticklabels: false,
+                showgrid: false,
+                side: 'right'
+            },
+            // 隱藏選項鈕在小齒輪內
+            showSendToCloud: true, // 顯示小齒輪圖示
+            modeBarButtonsToRemove: ['sendDataToCloud', 'pan2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d', 'resetScale2d']
+        };
+
+        // 添加一個空的y軸3，以便將trace1放在圖表上方
+        layout.yaxis3 = Object.assign({}, layout.yaxis);
+
+        Plotly.newPlot('chart', [trace1, trace2], layout);
+    </script>
+</body>
+</html>
