@@ -1,124 +1,214 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>楓幣K線圖</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <style>
-    #chart {
-        width: 100%;
-        height: 600px; /* 調整高度以適應您需要的尺寸 */
-    }
-    /* 小型屏幕，例如手機 */
-    @media (max-width: 767px) {
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>楓幣K線圖</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
         #chart {
+            margin-top: 20px;
             width: 100%;
-            height: 400px; /* 調整高度以適應較小的屏幕 */
+            height: 800px; /* 調整高度以適應您需要的尺寸 */
         }
-        /* 其他適應手機的CSS調整 */
-    }
 
-    /* 中型屏幕，例如平板 */
-    @media (min-width: 768px) and (max-width: 1023px) {
-        #chart {
-            width: 100%;
-            height: 500px; /* 調整高度以適應中等屏幕 */
+        /* 小型屏幕，例如手機 */
+        @media (max-width: 767px) {
+            #chart {
+                height: 600px; /* 調整高度以適應較小的屏幕 */
+            }
         }
-        /* 其他適應平板的CSS調整 */
-    }
 
-  </style>
-  
+        /* 中型屏幕，例如平板 */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            #chart {
+                height: 700px; /* 調整高度以適應中等屏幕 */
+            }
+        }
+
+        /* 切換版本按鈕樣式 */
+        #switchButton {
+            position: absolute;
+            top: 30px;
+            left: 80px;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #32d432; /* 淺綠色 */
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        #switchButton:hover {
+            background-color: #4ec02b; /* 深綠色 */
+        }
+
+        /* 作者信息 */
+        #authorInfo {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-style: italic;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
+<div id="chart"></div>
+<button id="switchButton" onclick="switchVersion()">切換為LP版</button>
+<div id="authorInfo">作者：阿璋<a href="https://chat.openai.com/" target="_blank" style="margin-left: 10px;">GPT-3.5</a></div>
 
-    <div id="chart"></div>
+<script>
+    var currentVersion = '8591'; // 初始版本為 LP
 
-    <script>
-        // 使用假數據
-        var data = [
-          { date: '2023-08-06', open: '680.68', high: 752.587, low: 659.133, close: '740' },
-          { date: '2023-08-07', open: '700', high: 740, low: 660, close: '720' },
-          { date: '2023-08-08', open: '700', high: 730, low: 680, close: '700' },
-          { date: '2023-08-09', open: '724.365', high: 724.365, low: 679.611, close: '700' },
-          { date: '2023-08-10', open: '724.365', high: 730, low: 660, close: '710' },
-          { date: '2023-08-11', open: '730', high: 730, low: 660, close: '680' },
-          { date: '2023-08-12', open: '700', high: 715, low: 660.66, close: '700' },
-          { date: '2023-08-13', open: '710', high: 730, low: 622.641, close: '710' },
-          { date: '2023-08-14', open: '710', high: 730, low: 680, close: '680' },
-          { date: '2023-08-15', open: '705', high: 730, low: 622.641, close: '680' },
-          { date: '2023-08-16', open: '730', high: 750.75, low: 660.66, close: '700' },
-          { date: '2023-08-17', open: '681', high: 750.75, low: 670.67, close: '705' },
-          { date: '2023-08-18', open: '720', high: 720, low: 680, close: '710' },
-          { date: '2023-08-19', open: '720', high: 730, low: 600, close: '720' },
-          { date: '2023-08-20', open: '720', high: 730, low: 680, close: '730' },
-          { date: '2023-08-21', open: '688.679', high: 730, low: 622.641, close: '700' },
-          { date: '2023-08-22', open: '705.55', high: 730, low: 622.641, close: '700' },
-          { date: '2023-08-23', open: '720', high: 730, low: 670.67, close: '705' },
-          { date: '2023-08-24', open: '705', high: 725, low: 700, close: '700' },
-          { date: '2023-08-25', open: '700', high: 721, low: 670.67, close: '705' },
-          { date: '2023-08-26', open: '705.55', high: 730, low: 622.641, close: '720' },
-          { date: '2023-08-27', open: '710', high: 772.727, low: 670.67, close: '710' },
-          { date: '2023-08-28', open: '710', high: 730, low: 696.142, close: '710' },
-          { date: '2023-08-29', open: '710', high: 730, low: 670.67, close: '700' },
-          { date: '2023-08-30', open: '700', high: 800, low: 688.679, close: '715' },
-          { date: '2023-08-31', open: '700', high: 730, low: 700, close: '700' },
-          { date: '2023-09-01', open: '711', high: 725.075, low: 630.63, close: '700' },
-          { date: '2023-09-02', open: '630.63', high: 730, low: 630.63, close: '720' },
-          { date: '2023-09-03', open: '700', high: 730, low: 630.63, close: '720' },
-          { date: '2023-09-04', open: '720', high: 730, low: 700, close: '700' },
-          { date: '2023-09-05', open: '700', high: 740, low: 640.64, close: '700' }
-      ];
+    // 使用fetch API從data.json文件中讀取數據
+    function fetchData() {
+        fetch('data.json')
+            .then(response => response.json()) // 解析 JSON 响應
+            .then(jsonData => {
+                // jsonData 包含從 data.json 中讀取的數據
+                // 將日期時間字段解析為日期
+                jsonData.forEach(function(item) {
+                    item.datetime = new Date(item.datetime);
+                });
 
+                // 根據日期分組數據
+                var groupedData = {};
+                jsonData.forEach(function(item) {
+                    var dateKey = item.datetime.toISOString().split('T')[0];
+                    if (!groupedData[dateKey]) {
+                        groupedData[dateKey] = {
+                            date: dateKey,
+                            open: item.coin_value,
+                            high: item.coin_value,
+                            low: item.coin_value,
+                            close: item.coin_value,
+                            volume: item.quantity
+                        };
+                    } else {
+                        var group = groupedData[dateKey];
+                        group.high = Math.max(group.high, item.coin_value);
+                        group.low = Math.min(group.low, item.coin_value);
+                        group.close = item.coin_value;
+                        group.volume += item.quantity;
+                    }
+                });
 
-        // 創建 K 線圖
-        var trace1 = {
-            x: data.map(d => d.date),
-            close: data.map(d => d.close),
-            high: data.map(d => d.high),
-            low: data.map(d => d.low),
-            open: data.map(d => d.open),
-            type: 'candlestick',
-            increasing: {line: {color: 'red'}},
-            decreasing: {line: {color: 'green'}}
-        };
-        var trace2 = {
-            x: data.map(d => d.date),
-            y: data.map(d => d.volume),
-            type: 'bar',
-            marker: {color: 'rgba(0,0,0,0.2)'},
-            yaxis: 'y2'
-        };
+                var klineData = Object.values(groupedData);
 
-        var layout = {
-            title: 'K線圖',
-            xaxis: {
-                type: 'category'
-            },
-            yaxis: {
-                title: '價格',
-                side: 'left'
-            },
-            yaxis2: {
-                title: '成交量',
-                overlaying: 'y',
-                side: 'right'
-            },
-            yaxis3: {
-                showticklabels: false,
-                showgrid: false,
-                side: 'right'
-            },
-            // 隱藏選項鈕在小齒輪內
-            showSendToCloud: true, // 顯示小齒輪圖示
-            modeBarButtonsToRemove: ['sendDataToCloud', 'pan2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d', 'resetScale2d']
-        };
+                // 排序數據以確保按日期順序
+                klineData.sort(function(a, b) {
+                    return new Date(a.date) - new Date(b.date);
+                });
 
-        // 添加一個空的y軸3，以便將trace1放在圖表上方
-        layout.yaxis3 = Object.assign({}, layout.yaxis);
+                // 如果當前版本是LP，將價格除以0.94
+                if (currentVersion === 'LP') {
+                    klineData.forEach(function(item) {
+                        item.open /= 0.94;
+                        item.high /= 0.94;
+                        item.low /= 0.94;
+                        item.close /= 0.94;
+                    });
+                }
 
-        Plotly.newPlot('chart', [trace1, trace2], layout);
-    </script>
+                // 計算價格範圍
+                var priceMax = Math.max(...klineData.map((d) => d.high));
+                var priceMin = Math.min(...klineData.map((d) => d.low));
+
+                // 計算成交量的高度（K 線圖高度的 1/4）
+                var chartHeight = document.getElementById('chart').clientHeight;
+                var volumeHeight = chartHeight / 4;
+
+                // 創建 K 線圖
+                var trace1 = {
+                    x: klineData.map((d) => d.date),
+                    close: klineData.map((d) => d.close),
+                    high: klineData.map((d) => d.high),
+                    low: klineData.map((d) => d.low),
+                    open: klineData.map((d) => d.open),
+                    type: "candlestick",
+                    increasing: { line: { color: "red" } },
+                    decreasing: { line: { color: "green" } },
+                    yaxis: "y", // 價格在左側
+                };
+
+                // 創建成交量圖
+                var trace2 = {
+                    x: klineData.map((d) => d.date),
+                    y: klineData.map((d) => d.volume),
+                    type: "bar",
+                    yaxis: "y2", // 成交量在右側
+                    marker: {
+                        color: klineData.map((d, i) => (d.close > d.open) ? "red" : "green"), // 使用紅色表示升價，綠色表示跌價
+                        opacity: 0.4, // 設定成交量圖的半透明度
+                    },
+                };
+
+                // 設置 K 線圖的幣價軸
+                var priceAxis = {
+                    title: {
+                        text: "幣價",
+                    },
+                    side: "right", // 價格軸在右側
+                    range: [Math.floor(priceMin * 0.8 / 20) * 20, Math.ceil(priceMax * 1.1 / 20) * 20], // 設定價格範圍並確保是20的倍數
+                    tickvals: Array.from({length: Math.ceil((priceMax - priceMin) / 20) + 1}, (_, i) => Math.floor(priceMin / 20) * 20 + i * 20), // 每20單位顯示一個刻度
+                    tickformat: ',.0f', // 刻度值格式為整數
+                };
+
+                // 設置圖表布局
+                var layout = {
+                    title: `楓幣K線圖與成交量 (${currentVersion}版)`,
+                    xaxis: {
+                        type: "category",
+                    },
+                    yaxis: priceAxis, // 使用自定義的價格軸
+                    yaxis2: {
+                        title: "成交量",
+                        side: "right", // 成交量在左側
+                        overlaying: "y2",
+                        domain: [0, 0.15], // 設定成交量區域的高度
+                    },
+                    showlegend: false,
+                    showSendToCloud: true, // 顯示小齒輪圖示
+                    modeBarButtonsToRemove: [
+                        "sendDataToCloud",
+                        "pan2d",
+                        "zoomIn2d",
+                        "zoomOut2d",
+                        "autoScale2d",
+                        "resetScale2d",
+                    ],
+                    // 調整上下方的間距
+                    margin: {
+                        t: 50, // 上方
+                        b: 80, // 下方
+                    },
+                    // 調整成交量的高度
+                    height: chartHeight,
+                };
+
+                Plotly.newPlot("chart", [trace1, trace2], layout);
+            })
+            .catch(error => {
+                console.error('讀取數據時出錯：', error);
+            });
+    }
+
+    function switchVersion() {
+        currentVersion = currentVersion === '8591' ? 'LP' : '8591';
+        var switchButton = document.getElementById('switchButton');
+        if(currentVersion === '8591') {
+            switchButton.innerText = `切換為LP版`;
+        } else {
+            switchButton.innerText = `切換為8591版`;
+        }
+        switchButton.style.backgroundColor = currentVersion === 'LP' ? '#007BFF' : '#32d432'; // 淺藍色或淺綠色
+        fetchData();
+    }
+
+    // 初始加載數據
+    fetchData();
+</script>
 </body>
 </html>
