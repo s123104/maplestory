@@ -9,23 +9,24 @@
     <style>
         #chart {
             margin-top: 20px;
-            width: 100%;
+            width: 100%; /* 讓寬度佔滿父元素寬度 */
             height: 800px; /* 調整高度以適應您需要的尺寸 */
         }
 
         /* 小型屏幕，例如手機 */
-        @media (max-width: 767px) {
+        @media (max-width: 767px), (orientation: portrait) {
             #chart {
                 height: 600px; /* 調整高度以適應較小的屏幕 */
             }
         }
 
         /* 中型屏幕，例如平板 */
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1023px), (orientation: portrait) {
             #chart {
                 height: 700px; /* 調整高度以適應中等屏幕 */
             }
         }
+
 
         /* 切換版本按鈕樣式 */
         #switchButton {
