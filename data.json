@@ -10366,5 +10366,47 @@
         "coin_value": 658.1,
         "quantity": 3191,
         "datetime": "2023-09-11T00:29:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-11T11:17:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T11:37:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T11:49:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T12:22:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T12:22:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T13:13:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T13:15:00"
     }
 ]
