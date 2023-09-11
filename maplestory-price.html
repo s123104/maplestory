@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="maplestory.ico" type="image/x-icon">
-    <title>楓谷幣價 - 楓谷歷史幣價 - 楓幣 - 楓幣走勢圖 - 楓幣歷史價</title>
+    <title>楓幣幣價 - 楓幣歷史價格 - 楓幣 - 楓幣走勢圖 - 楓幣歷史價 - 楓谷幣價</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         #chart {
@@ -54,13 +54,20 @@
             font-style: italic;
             font-size: 14px;
         }
+        /* 最後更新時間樣式 */
+        #lastUpdated {
+            position: fixed;
+            bottom: 10px;
+            right: 40px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
 <div id="chart"></div>
 <button id="switchButton" onclick="switchVersion()">切換為LP版</button>
 <div id="authorInfo">作者：阿璋<span style="margin-left: 20px;">developed by </span><a href="https://chat.openai.com/" target="_blank" >GPT-3.5</a></div>
-
+<div id="lastUpdated">數據更新時間: Loading...</div>
 <script>
     var currentVersion = '8591'; // 初始版本為 LP
 
@@ -211,6 +218,17 @@
                 };
 
                 Plotly.newPlot("chart", [trace1, trace2], layout);
+
+                // 獲取最後一筆數據的日期時間
+                var lastData = jsonData[jsonData.length - 1].datetime;
+
+                // 格式化時間為簡單格式
+                var formattedTime = new Date(lastData).toLocaleString();
+
+                // 更新最後更新時間
+                var lastUpdatedElement = document.getElementById('lastUpdated');
+                lastUpdatedElement.textContent = '數據更新時間: ' + formattedTime;
+
             })
             .catch(error => {
                 console.error('讀取數據時出錯：', error);
