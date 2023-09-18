@@ -219,8 +219,8 @@
 
                 Plotly.newPlot("chart", [trace1, trace2], layout);
 
-                // 獲取最後一筆數據的日期時間
-                var lastData = jsonData[jsonData.length - 1].datetime;
+                // 獲取最後一筆數據的日期時間(暫時性-8小時修正回台灣時間)
+                var lastData = jsonData[jsonData.length - 1].datetime- 8 * 60 * 60 * 1000;
 
                 // 格式化時間為簡單格式
                 var formattedTime = new Date(lastData).toLocaleString();
