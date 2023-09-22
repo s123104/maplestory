@@ -2725,6 +2725,12 @@
     },
     {
         "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-13T11:50:00"
+    },
+    {
+        "server": "883",
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-08-13T12:09:00"
@@ -3328,6 +3334,12 @@
         "coin_value": 710.0,
         "quantity": 200,
         "datetime": "2023-08-15T16:30:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-15T16:33:00"
     },
     {
         "server": "883",
@@ -4213,6 +4225,12 @@
     },
     {
         "server": "883",
+        "coin_value": 600.0,
+        "quantity": 5000,
+        "datetime": "2023-08-19T11:12:00"
+    },
+    {
+        "server": "883",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-08-19T11:49:00"
@@ -4807,6 +4825,12 @@
     },
     {
         "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-21T10:48:00"
+    },
+    {
+        "server": "883",
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-08-21T10:50:00"
@@ -5014,6 +5038,12 @@
         "coin_value": 725.0,
         "quantity": 100,
         "datetime": "2023-08-22T11:44:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-22T12:23:00"
     },
     {
         "server": "883",
@@ -5748,6 +5778,12 @@
         "datetime": "2023-08-23T19:29:00"
     },
     {
+        "server": "944",
+        "coin_value": 760.0,
+        "quantity": 3000,
+        "datetime": "2023-08-23T19:31:00"
+    },
+    {
         "server": "913",
         "coin_value": 740.0,
         "quantity": 100,
@@ -6300,6 +6336,12 @@
         "datetime": "2023-08-23T23:22:00"
     },
     {
+        "server": "863",
+        "coin_value": 613.207,
+        "quantity": 212,
+        "datetime": "2023-08-23T23:32:00"
+    },
+    {
         "server": "862",
         "coin_value": 720.72,
         "quantity": 999,
@@ -6523,6 +6565,12 @@
     },
     {
         "server": "862",
+        "coin_value": 800.97,
+        "quantity": 10300,
+        "datetime": "2023-08-24T04:08:00"
+    },
+    {
+        "server": "862",
         "coin_value": 721.0,
         "quantity": 100,
         "datetime": "2023-08-24T07:09:00"
@@ -6544,6 +6592,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-08-24T07:34:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-08-24T07:49:00"
     },
     {
         "server": "883",
@@ -6708,6 +6762,12 @@
         "datetime": "2023-08-24T12:40:00"
     },
     {
+        "server": "984",
+        "coin_value": 632.5,
+        "quantity": 200,
+        "datetime": "2023-08-24T12:45:00"
+    },
+    {
         "server": "913",
         "coin_value": 735.0,
         "quantity": 100,
@@ -6736,6 +6796,12 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-08-24T13:22:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-24T13:28:00"
     },
     {
         "server": "883",
@@ -7414,6 +7480,12 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-08-24T21:59:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 200,
+        "datetime": "2023-08-24T22:04:00"
     },
     {
         "server": "883",
@@ -8154,6 +8226,12 @@
         "datetime": "2023-08-25T16:17:00"
     },
     {
+        "server": "862",
+        "coin_value": 840.0,
+        "quantity": 500,
+        "datetime": "2023-08-25T16:25:00"
+    },
+    {
         "server": "984",
         "coin_value": 720.0,
         "quantity": 500,
@@ -8565,6 +8643,12 @@
         "server": "883",
         "coin_value": 710.0,
         "quantity": 100,
+        "datetime": "2023-08-25T22:18:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 500,
         "datetime": "2023-08-25T22:18:00"
     },
     {
@@ -9001,6 +9085,12 @@
     },
     {
         "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-08-26T07:33:00"
+    },
+    {
+        "server": "862",
         "coin_value": 735.0,
         "quantity": 100,
         "datetime": "2023-08-26T08:03:00"
@@ -9162,6 +9252,12 @@
         "datetime": "2023-08-26T11:23:00"
     },
     {
+        "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-26T11:25:00"
+    },
+    {
         "server": "862",
         "coin_value": 740.0,
         "quantity": 100,
@@ -9178,6 +9274,12 @@
         "coin_value": 740.0,
         "quantity": 100,
         "datetime": "2023-08-26T11:39:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 800.0,
+        "quantity": 1000,
+        "datetime": "2023-08-26T11:43:00"
     },
     {
         "server": "862",
@@ -9571,6 +9673,12 @@
     },
     {
         "server": "862",
+        "coin_value": 769.23,
+        "quantity": 3900,
+        "datetime": "2023-08-26T16:26:00"
+    },
+    {
+        "server": "862",
         "coin_value": 723.91,
         "quantity": 3191,
         "datetime": "2023-08-26T16:33:00"
@@ -9762,6 +9870,12 @@
         "datetime": "2023-08-26T18:37:00"
     },
     {
+        "server": "984",
+        "coin_value": 640.0,
+        "quantity": 200,
+        "datetime": "2023-08-26T18:40:00"
+    },
+    {
         "server": "913",
         "coin_value": 700.0,
         "quantity": 100,
@@ -9778,6 +9892,18 @@
         "coin_value": 700.7,
         "quantity": 999,
         "datetime": "2023-08-26T18:52:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 762.5,
+        "quantity": 3200,
+        "datetime": "2023-08-26T18:54:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 780.0,
+        "quantity": 1000,
+        "datetime": "2023-08-26T19:03:00"
     },
     {
         "server": "944",
@@ -10056,6 +10182,12 @@
         "datetime": "2023-08-26T21:42:00"
     },
     {
+        "server": "863",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-26T21:46:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
@@ -10108,6 +10240,12 @@
         "coin_value": 750.0,
         "quantity": 1000,
         "datetime": "2023-08-26T22:06:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 775.0,
+        "quantity": 4000,
+        "datetime": "2023-08-26T22:07:00"
     },
     {
         "server": "984",
@@ -10530,6 +10668,12 @@
         "datetime": "2023-08-27T08:34:00"
     },
     {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-08-27T08:45:00"
+    },
+    {
         "server": "863",
         "coin_value": 730.0,
         "quantity": 100,
@@ -10906,6 +11050,12 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-08-27T14:56:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-27T15:07:00"
     },
     {
         "server": "944",
@@ -11484,6 +11634,12 @@
         "datetime": "2023-08-27T21:21:00"
     },
     {
+        "server": "883",
+        "coin_value": 772.727,
+        "quantity": 2200,
+        "datetime": "2023-08-27T21:22:00"
+    },
+    {
         "server": "862",
         "coin_value": 730.0,
         "quantity": 100,
@@ -11524,6 +11680,12 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-08-27T21:39:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 761.904,
+        "quantity": 2100,
+        "datetime": "2023-08-27T21:41:00"
     },
     {
         "server": "883",
@@ -12030,6 +12192,12 @@
         "datetime": "2023-08-28T11:54:00"
     },
     {
+        "server": "862",
+        "coin_value": 759.493,
+        "quantity": 1975,
+        "datetime": "2023-08-28T12:11:00"
+    },
+    {
         "server": "913",
         "coin_value": 740.0,
         "quantity": 1000,
@@ -12498,6 +12666,12 @@
         "datetime": "2023-08-28T19:22:00"
     },
     {
+        "server": "913",
+        "coin_value": 760.0,
+        "quantity": 1000,
+        "datetime": "2023-08-28T19:24:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 1500,
@@ -12636,6 +12810,12 @@
         "datetime": "2023-08-28T20:18:00"
     },
     {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 200,
+        "datetime": "2023-08-28T20:22:00"
+    },
+    {
         "server": "984",
         "coin_value": 740.0,
         "quantity": 100,
@@ -12670,6 +12850,12 @@
         "coin_value": 740.0,
         "quantity": 100,
         "datetime": "2023-08-28T20:29:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 200,
+        "datetime": "2023-08-28T20:30:00"
     },
     {
         "server": "913",
@@ -12790,6 +12976,12 @@
         "coin_value": 688.679,
         "quantity": 106,
         "datetime": "2023-08-28T21:31:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 764.705,
+        "quantity": 3400,
+        "datetime": "2023-08-28T21:39:00"
     },
     {
         "server": "862",
@@ -14148,6 +14340,12 @@
         "datetime": "2023-08-29T22:44:00"
     },
     {
+        "server": "863",
+        "coin_value": 760.0,
+        "quantity": 3000,
+        "datetime": "2023-08-29T22:45:00"
+    },
+    {
         "server": "944",
         "coin_value": 726.0,
         "quantity": 100,
@@ -14670,6 +14868,12 @@
         "datetime": "2023-08-30T18:40:00"
     },
     {
+        "server": "862",
+        "coin_value": 775.0,
+        "quantity": 4000,
+        "datetime": "2023-08-30T18:42:00"
+    },
+    {
         "server": "883",
         "coin_value": 730.0,
         "quantity": 100,
@@ -14782,6 +14986,12 @@
         "coin_value": 750.0,
         "quantity": 1000,
         "datetime": "2023-08-30T19:39:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 760.0,
+        "quantity": 100,
+        "datetime": "2023-08-30T19:43:00"
     },
     {
         "server": "944",
@@ -14926,6 +15136,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-08-30T20:59:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 800.0,
+        "quantity": 375,
+        "datetime": "2023-08-30T21:03:00"
     },
     {
         "server": "863",
@@ -15342,6 +15558,12 @@
         "datetime": "2023-08-30T23:45:00"
     },
     {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 100,
+        "datetime": "2023-08-30T23:47:00"
+    },
+    {
         "server": "913",
         "coin_value": 745.0,
         "quantity": 100,
@@ -15541,6 +15763,12 @@
     },
     {
         "server": "862",
+        "coin_value": 763.636,
+        "quantity": 550,
+        "datetime": "2023-08-31T09:58:00"
+    },
+    {
+        "server": "862",
         "coin_value": 723.0,
         "quantity": 100,
         "datetime": "2023-08-31T10:10:00"
@@ -15616,6 +15844,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-08-31T11:48:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 1000,
+        "datetime": "2023-08-31T11:51:00"
     },
     {
         "server": "863",
@@ -15984,6 +16218,12 @@
         "datetime": "2023-08-31T17:37:00"
     },
     {
+        "server": "863",
+        "coin_value": 760.0,
+        "quantity": 100,
+        "datetime": "2023-08-31T17:37:00"
+    },
+    {
         "server": "984",
         "coin_value": 733.0,
         "quantity": 100,
@@ -16053,6 +16293,12 @@
         "server": "863",
         "coin_value": 745.0,
         "quantity": 100,
+        "datetime": "2023-08-31T18:38:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 800.0,
+        "quantity": 300,
         "datetime": "2023-08-31T18:38:00"
     },
     {
@@ -16290,6 +16536,12 @@
         "datetime": "2023-08-31T20:44:00"
     },
     {
+        "server": "863",
+        "coin_value": 780.0,
+        "quantity": 400,
+        "datetime": "2023-08-31T20:46:00"
+    },
+    {
         "server": "944",
         "coin_value": 725.0,
         "quantity": 1000,
@@ -16464,6 +16716,12 @@
         "datetime": "2023-08-31T21:36:00"
     },
     {
+        "server": "862",
+        "coin_value": 765.0,
+        "quantity": 8000,
+        "datetime": "2023-08-31T21:47:00"
+    },
+    {
         "server": "863",
         "coin_value": 720.0,
         "quantity": 100,
@@ -16594,6 +16852,12 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-08-31T22:44:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-08-31T22:47:00"
     },
     {
         "server": "883",
@@ -17274,6 +17538,12 @@
         "datetime": "2023-09-01T16:39:00"
     },
     {
+        "server": "863",
+        "coin_value": 760.0,
+        "quantity": 2000,
+        "datetime": "2023-09-01T16:42:00"
+    },
+    {
         "server": "913",
         "coin_value": 720.0,
         "quantity": 100,
@@ -17374,6 +17644,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-01T18:02:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-01T18:04:00"
     },
     {
         "server": "883",
@@ -17940,6 +18216,12 @@
         "datetime": "2023-09-01T23:56:00"
     },
     {
+        "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-02T00:07:00"
+    },
+    {
         "server": "913",
         "coin_value": 700.0,
         "quantity": 100,
@@ -17962,6 +18244,12 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-09-02T00:15:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 200,
+        "datetime": "2023-09-02T00:20:00"
     },
     {
         "server": "913",
@@ -18052,6 +18340,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-02T01:32:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 640.0,
+        "quantity": 100,
+        "datetime": "2023-09-02T01:37:00"
     },
     {
         "server": "863",
@@ -18582,6 +18876,12 @@
         "datetime": "2023-09-02T14:28:00"
     },
     {
+        "server": "862",
+        "coin_value": 769.23,
+        "quantity": 130,
+        "datetime": "2023-09-02T14:31:00"
+    },
+    {
         "server": "883",
         "coin_value": 700.0,
         "quantity": 100,
@@ -18702,10 +19002,22 @@
         "datetime": "2023-09-02T15:39:00"
     },
     {
+        "server": "863",
+        "coin_value": 770.0,
+        "quantity": 1000,
+        "datetime": "2023-09-02T15:46:00"
+    },
+    {
         "server": "984",
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-02T15:49:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 500.0,
+        "quantity": 100,
+        "datetime": "2023-09-02T16:00:00"
     },
     {
         "server": "984",
@@ -18754,6 +19066,12 @@
         "coin_value": 735.0,
         "quantity": 2500,
         "datetime": "2023-09-02T16:46:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-02T16:50:00"
     },
     {
         "server": "944",
@@ -18958,6 +19276,12 @@
         "coin_value": 735.0,
         "quantity": 100,
         "datetime": "2023-09-02T18:39:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-02T18:40:00"
     },
     {
         "server": "863",
@@ -19248,6 +19572,12 @@
         "datetime": "2023-09-02T20:51:00"
     },
     {
+        "server": "863",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-02T20:58:00"
+    },
+    {
         "server": "913",
         "coin_value": 669.811,
         "quantity": 106,
@@ -19536,6 +19866,12 @@
         "datetime": "2023-09-02T22:37:00"
     },
     {
+        "server": "944",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-02T22:37:00"
+    },
+    {
         "server": "862",
         "coin_value": 740.0,
         "quantity": 1000,
@@ -19809,6 +20145,12 @@
         "server": "883",
         "coin_value": 710.0,
         "quantity": 100,
+        "datetime": "2023-09-03T00:36:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.65,
+        "quantity": 999,
         "datetime": "2023-09-03T00:36:00"
     },
     {
@@ -20160,6 +20502,12 @@
         "datetime": "2023-09-03T09:10:00"
     },
     {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-03T09:25:00"
+    },
+    {
         "server": "984",
         "coin_value": 710.0,
         "quantity": 100,
@@ -20170,6 +20518,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-03T09:38:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-03T09:51:00"
     },
     {
         "server": "984",
@@ -20298,6 +20652,12 @@
         "datetime": "2023-09-03T12:07:00"
     },
     {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 1000,
+        "datetime": "2023-09-03T12:12:00"
+    },
+    {
         "server": "984",
         "coin_value": 740.0,
         "quantity": 100,
@@ -20370,6 +20730,12 @@
         "datetime": "2023-09-03T12:42:00"
     },
     {
+        "server": "862",
+        "coin_value": 764.044,
+        "quantity": 1335,
+        "datetime": "2023-09-03T12:45:00"
+    },
+    {
         "server": "984",
         "coin_value": 660.0,
         "quantity": 100,
@@ -20380,6 +20746,18 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-09-03T12:53:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 100,
+        "datetime": "2023-09-03T12:53:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 100,
+        "datetime": "2023-09-03T12:56:00"
     },
     {
         "server": "944",
@@ -20772,6 +21150,12 @@
         "datetime": "2023-09-03T15:20:00"
     },
     {
+        "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-03T15:21:00"
+    },
+    {
         "server": "984",
         "coin_value": 740.0,
         "quantity": 100,
@@ -20896,6 +21280,12 @@
         "coin_value": 740.0,
         "quantity": 100,
         "datetime": "2023-09-03T15:57:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 800.0,
+        "quantity": 1000,
+        "datetime": "2023-09-03T16:01:00"
     },
     {
         "server": "984",
@@ -21064,6 +21454,12 @@
         "coin_value": 725.0,
         "quantity": 100,
         "datetime": "2023-09-03T17:06:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-03T17:07:00"
     },
     {
         "server": "862",
@@ -21415,6 +21811,12 @@
     },
     {
         "server": "862",
+        "coin_value": 650.041,
+        "quantity": 8461,
+        "datetime": "2023-09-03T19:56:00"
+    },
+    {
+        "server": "862",
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-09-03T20:03:00"
@@ -21676,6 +22078,12 @@
         "coin_value": 736.472,
         "quantity": 499,
         "datetime": "2023-09-03T22:01:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 571.034,
+        "quantity": 29,
+        "datetime": "2023-09-03T22:04:00"
     },
     {
         "server": "862",
@@ -22006,6 +22414,12 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-09-03T23:57:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-04T00:07:00"
     },
     {
         "server": "863",
@@ -22440,6 +22854,12 @@
         "datetime": "2023-09-04T12:59:00"
     },
     {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-04T13:04:00"
+    },
+    {
         "server": "862",
         "coin_value": 710.0,
         "quantity": 100,
@@ -22560,6 +22980,12 @@
         "datetime": "2023-09-04T14:19:00"
     },
     {
+        "server": "913",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-04T14:26:00"
+    },
+    {
         "server": "863",
         "coin_value": 710.0,
         "quantity": 100,
@@ -22636,6 +23062,12 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-09-04T15:23:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 1000,
+        "datetime": "2023-09-04T15:26:00"
     },
     {
         "server": "883",
@@ -23124,6 +23556,12 @@
         "datetime": "2023-09-04T20:08:00"
     },
     {
+        "server": "984",
+        "coin_value": 803.183,
+        "quantity": 1382,
+        "datetime": "2023-09-04T20:11:00"
+    },
+    {
         "server": "863",
         "coin_value": 730.0,
         "quantity": 100,
@@ -23256,10 +23694,22 @@
         "datetime": "2023-09-04T21:04:00"
     },
     {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 200,
+        "datetime": "2023-09-04T21:07:00"
+    },
+    {
         "server": "913",
         "coin_value": 740.0,
         "quantity": 100,
         "datetime": "2023-09-04T21:11:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 500,
+        "datetime": "2023-09-04T21:14:00"
     },
     {
         "server": "883",
@@ -23278,6 +23728,18 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-09-04T21:19:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 500,
+        "datetime": "2023-09-04T21:20:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 6200,
+        "datetime": "2023-09-04T21:24:00"
     },
     {
         "server": "944",
@@ -23308,6 +23770,12 @@
         "coin_value": 741.758,
         "quantity": 1820,
         "datetime": "2023-09-04T21:33:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 760.0,
+        "quantity": 500,
+        "datetime": "2023-09-04T21:34:00"
     },
     {
         "server": "883",
@@ -24288,6 +24756,12 @@
         "datetime": "2023-09-05T18:40:00"
     },
     {
+        "server": "883",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-05T18:42:00"
+    },
+    {
         "server": "984",
         "coin_value": 720.0,
         "quantity": 100,
@@ -25266,6 +25740,12 @@
         "datetime": "2023-09-05T23:56:00"
     },
     {
+        "server": "862",
+        "coin_value": 1000.0,
+        "quantity": 1500,
+        "datetime": "2023-09-06T01:58:00"
+    },
+    {
         "server": "984",
         "coin_value": 740.0,
         "quantity": 200,
@@ -25507,6 +25987,12 @@
     },
     {
         "server": "862",
+        "coin_value": 645.833,
+        "quantity": 14400,
+        "datetime": "2023-09-06T17:24:00"
+    },
+    {
+        "server": "862",
         "coin_value": 750.0,
         "quantity": 1000,
         "datetime": "2023-09-06T17:33:00"
@@ -25626,6 +26112,12 @@
         "datetime": "2023-09-06T18:56:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-06T19:03:00"
+    },
+    {
         "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
@@ -25636,6 +26128,12 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-09-06T19:05:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-06T19:07:00"
     },
     {
         "server": "883",
@@ -26002,6 +26500,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-06T21:35:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 650.65,
+        "quantity": 999,
+        "datetime": "2023-09-06T21:37:00"
     },
     {
         "server": "913",
@@ -26652,6 +27156,12 @@
         "datetime": "2023-09-07T10:19:00"
     },
     {
+        "server": "863",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-07T10:38:00"
+    },
+    {
         "server": "984",
         "coin_value": 710.0,
         "quantity": 500,
@@ -26674,6 +27184,12 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-09-07T11:29:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 650.65,
+        "quantity": 999,
+        "datetime": "2023-09-07T11:38:00"
     },
     {
         "server": "863",
@@ -26764,6 +27280,12 @@
         "coin_value": 720.0,
         "quantity": 500,
         "datetime": "2023-09-07T13:45:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-07T13:47:00"
     },
     {
         "server": "944",
@@ -27192,6 +27714,12 @@
         "datetime": "2023-09-07T20:08:00"
     },
     {
+        "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-07T20:10:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
@@ -27384,6 +27912,12 @@
         "datetime": "2023-09-07T21:00:00"
     },
     {
+        "server": "883",
+        "coin_value": 766.666,
+        "quantity": 300,
+        "datetime": "2023-09-07T21:05:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -27532,6 +28066,12 @@
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-09-07T21:56:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 759.803,
+        "quantity": 1020,
+        "datetime": "2023-09-07T21:57:00"
     },
     {
         "server": "862",
@@ -28110,10 +28650,28 @@
         "datetime": "2023-09-08T12:18:00"
     },
     {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-08T12:22:00"
+    },
+    {
         "server": "913",
         "coin_value": 730.0,
         "quantity": 1410,
         "datetime": "2023-09-08T12:24:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 650.65,
+        "quantity": 999,
+        "datetime": "2023-09-08T12:27:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-08T12:36:00"
     },
     {
         "server": "913",
@@ -28222,6 +28780,12 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-09-08T13:35:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 636.363,
+        "quantity": 550,
+        "datetime": "2023-09-08T13:36:00"
     },
     {
         "server": "984",
@@ -28474,6 +29038,12 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-09-08T17:20:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-08T17:31:00"
     },
     {
         "server": "862",
@@ -28752,6 +29322,12 @@
         "datetime": "2023-09-08T19:41:00"
     },
     {
+        "server": "863",
+        "coin_value": 775.0,
+        "quantity": 400,
+        "datetime": "2023-09-08T19:43:00"
+    },
+    {
         "server": "913",
         "coin_value": 700.0,
         "quantity": 100,
@@ -28863,6 +29439,12 @@
         "server": "883",
         "coin_value": 680.0,
         "quantity": 1000,
+        "datetime": "2023-09-08T20:29:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
         "datetime": "2023-09-08T20:29:00"
     },
     {
@@ -28995,6 +29577,12 @@
         "server": "913",
         "coin_value": 730.0,
         "quantity": 100,
+        "datetime": "2023-09-08T21:06:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.65,
+        "quantity": 999,
         "datetime": "2023-09-08T21:06:00"
     },
     {
@@ -29386,6 +29974,12 @@
         "coin_value": 687.5,
         "quantity": 320,
         "datetime": "2023-09-09T01:40:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-09T01:48:00"
     },
     {
         "server": "862",
@@ -30546,6 +31140,12 @@
         "datetime": "2023-09-09T20:40:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-09T20:43:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -30978,6 +31578,12 @@
         "datetime": "2023-09-10T01:11:00"
     },
     {
+        "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-10T01:21:00"
+    },
+    {
         "server": "863",
         "coin_value": 670.67,
         "quantity": 999,
@@ -31144,6 +31750,12 @@
         "coin_value": 705.0,
         "quantity": 100,
         "datetime": "2023-09-10T03:59:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-10T04:20:00"
     },
     {
         "server": "984",
@@ -31316,6 +31928,12 @@
     {
         "server": "984",
         "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2023-09-10T10:59:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
         "quantity": 100,
         "datetime": "2023-09-10T10:59:00"
     },
@@ -32274,6 +32892,12 @@
         "datetime": "2023-09-10T21:06:00"
     },
     {
+        "server": "863",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-10T21:06:00"
+    },
+    {
         "server": "984",
         "coin_value": 690.0,
         "quantity": 100,
@@ -32520,6 +33144,12 @@
         "datetime": "2023-09-10T22:41:00"
     },
     {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 200,
+        "datetime": "2023-09-10T22:43:00"
+    },
+    {
         "server": "862",
         "coin_value": 720.0,
         "quantity": 100,
@@ -32724,6 +33354,12 @@
         "datetime": "2023-09-11T01:07:00"
     },
     {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T01:07:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -32772,6 +33408,12 @@
         "datetime": "2023-09-11T02:59:00"
     },
     {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T08:57:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -32790,6 +33432,12 @@
         "datetime": "2023-09-11T10:09:00"
     },
     {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-11T10:40:00"
+    },
+    {
         "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
@@ -32800,6 +33448,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-11T10:48:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-11T11:17:00"
     },
     {
         "server": "944",
@@ -32830,6 +33484,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-11T11:49:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-11T11:58:00"
     },
     {
         "server": "913",
@@ -32880,6 +33540,12 @@
         "datetime": "2023-09-11T12:25:00"
     },
     {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T12:28:00"
+    },
+    {
         "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
@@ -32925,6 +33591,12 @@
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
+        "datetime": "2023-09-11T13:13:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
         "datetime": "2023-09-11T13:13:00"
     },
     {
@@ -33108,6 +33780,12 @@
         "datetime": "2023-09-11T16:00:00"
     },
     {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-11T16:08:00"
+    },
+    {
         "server": "913",
         "coin_value": 658.513,
         "quantity": 1063,
@@ -33282,6 +33960,12 @@
         "datetime": "2023-09-11T18:45:00"
     },
     {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-11T18:52:00"
+    },
+    {
         "server": "883",
         "coin_value": 670.0,
         "quantity": 100,
@@ -33378,6 +34062,12 @@
         "datetime": "2023-09-11T20:01:00"
     },
     {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T20:02:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
@@ -33394,6 +34084,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-11T20:23:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T20:27:00"
     },
     {
         "server": "984",
@@ -33426,6 +34122,12 @@
         "datetime": "2023-09-11T20:41:00"
     },
     {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T20:41:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -33436,6 +34138,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-11T20:43:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 263,
+        "datetime": "2023-09-11T20:44:00"
     },
     {
         "server": "862",
@@ -33460,6 +34168,12 @@
         "coin_value": 685.0,
         "quantity": 700,
         "datetime": "2023-09-11T20:52:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T20:53:00"
     },
     {
         "server": "862",
@@ -33642,6 +34356,12 @@
         "datetime": "2023-09-11T22:14:00"
     },
     {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-11T22:14:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -33682,6 +34402,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-11T22:28:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-11T22:32:00"
     },
     {
         "server": "944",
@@ -33726,10 +34452,22 @@
         "datetime": "2023-09-11T22:49:00"
     },
     {
+        "server": "984",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T22:50:00"
+    },
+    {
         "server": "913",
         "coin_value": 680.0,
         "quantity": 1000,
         "datetime": "2023-09-11T22:55:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T22:56:00"
     },
     {
         "server": "984",
@@ -33774,6 +34512,18 @@
         "datetime": "2023-09-11T23:15:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-11T23:16:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T23:17:00"
+    },
+    {
         "server": "862",
         "coin_value": 680.0,
         "quantity": 100,
@@ -33790,6 +34540,18 @@
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-11T23:23:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-11T23:23:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-11T23:34:00"
     },
     {
         "server": "913",
@@ -33967,6 +34729,12 @@
     },
     {
         "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T02:00:00"
+    },
+    {
+        "server": "944",
         "coin_value": 677.2,
         "quantity": 1329,
         "datetime": "2023-09-12T02:01:00"
@@ -33978,6 +34746,12 @@
         "datetime": "2023-09-12T02:25:00"
     },
     {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T02:53:00"
+    },
+    {
         "server": "883",
         "coin_value": 660.0,
         "quantity": 100,
@@ -33985,9 +34759,27 @@
     },
     {
         "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T03:36:00"
+    },
+    {
+        "server": "944",
         "coin_value": 660.377,
         "quantity": 106,
         "datetime": "2023-09-12T03:37:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T03:46:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T03:59:00"
     },
     {
         "server": "883",
@@ -34038,6 +34830,12 @@
         "datetime": "2023-09-12T09:23:00"
     },
     {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-12T09:27:00"
+    },
+    {
         "server": "984",
         "coin_value": 690.0,
         "quantity": 100,
@@ -34048,6 +34846,12 @@
         "coin_value": 660.377,
         "quantity": 106,
         "datetime": "2023-09-12T10:07:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T10:08:00"
     },
     {
         "server": "984",
@@ -34126,6 +34930,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-12T12:40:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T12:41:00"
     },
     {
         "server": "984",
@@ -34482,9 +35292,27 @@
         "datetime": "2023-09-12T18:29:00"
     },
     {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T18:31:00"
+    },
+    {
         "server": "883",
         "coin_value": 700.0,
         "quantity": 100,
+        "datetime": "2023-09-12T18:41:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-12T18:41:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
         "datetime": "2023-09-12T18:41:00"
     },
     {
@@ -34590,6 +35418,12 @@
         "datetime": "2023-09-12T19:55:00"
     },
     {
+        "server": "984",
+        "coin_value": 649.35,
+        "quantity": 385,
+        "datetime": "2023-09-12T19:58:00"
+    },
+    {
         "server": "863",
         "coin_value": 670.0,
         "quantity": 100,
@@ -34600,6 +35434,18 @@
         "coin_value": 670.0,
         "quantity": 100,
         "datetime": "2023-09-12T20:04:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T20:07:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-12T20:12:00"
     },
     {
         "server": "862",
@@ -34684,6 +35530,12 @@
         "coin_value": 710.0,
         "quantity": 1000,
         "datetime": "2023-09-12T20:56:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-12T20:57:00"
     },
     {
         "server": "862",
@@ -34974,6 +35826,12 @@
         "datetime": "2023-09-13T00:14:00"
     },
     {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 4000,
+        "datetime": "2023-09-13T00:22:00"
+    },
+    {
         "server": "883",
         "coin_value": 660.0,
         "quantity": 500,
@@ -35016,6 +35874,12 @@
         "datetime": "2023-09-13T00:37:00"
     },
     {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-13T01:29:00"
+    },
+    {
         "server": "863",
         "coin_value": 680.0,
         "quantity": 100,
@@ -35038,6 +35902,12 @@
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-13T03:12:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-13T03:21:00"
     },
     {
         "server": "862",
@@ -35088,6 +35958,12 @@
         "datetime": "2023-09-13T12:12:00"
     },
     {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 1000,
+        "datetime": "2023-09-13T12:14:00"
+    },
+    {
         "server": "944",
         "coin_value": 660.66,
         "quantity": 999,
@@ -35128,6 +36004,12 @@
         "coin_value": 695.0,
         "quantity": 100,
         "datetime": "2023-09-13T14:08:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-13T14:10:00"
     },
     {
         "server": "863",
@@ -35250,6 +36132,12 @@
         "datetime": "2023-09-13T18:12:00"
     },
     {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-13T18:21:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -35272,6 +36160,18 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-13T18:50:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-13T18:52:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-13T18:59:00"
     },
     {
         "server": "913",
@@ -35358,6 +36258,12 @@
         "datetime": "2023-09-13T20:29:00"
     },
     {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-13T20:36:00"
+    },
+    {
         "server": "883",
         "coin_value": 700.0,
         "quantity": 100,
@@ -35398,6 +36304,12 @@
         "coin_value": 700.0,
         "quantity": 2500,
         "datetime": "2023-09-13T20:50:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-13T20:52:00"
     },
     {
         "server": "862",
@@ -35485,9 +36397,21 @@
     },
     {
         "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-13T21:17:00"
+    },
+    {
+        "server": "913",
         "coin_value": 720.0,
         "quantity": 100,
         "datetime": "2023-09-13T21:24:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-13T21:30:00"
     },
     {
         "server": "913",
@@ -35517,6 +36441,12 @@
         "server": "862",
         "coin_value": 715.333,
         "quantity": 150,
+        "datetime": "2023-09-13T21:50:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
         "datetime": "2023-09-13T21:50:00"
     },
     {
@@ -35575,9 +36505,21 @@
     },
     {
         "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-13T22:10:00"
+    },
+    {
+        "server": "984",
         "coin_value": 701.0,
         "quantity": 100,
         "datetime": "2023-09-13T22:25:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-13T22:27:00"
     },
     {
         "server": "863",
@@ -35718,6 +36660,12 @@
         "datetime": "2023-09-14T00:44:00"
     },
     {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T00:59:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -35742,6 +36690,18 @@
         "datetime": "2023-09-14T02:16:00"
     },
     {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T02:27:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 596.33,
+        "quantity": 109,
+        "datetime": "2023-09-14T02:41:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -35758,6 +36718,12 @@
         "coin_value": 686.735,
         "quantity": 1063,
         "datetime": "2023-09-14T03:53:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T04:06:00"
     },
     {
         "server": "883",
@@ -35820,6 +36786,12 @@
         "datetime": "2023-09-14T10:43:00"
     },
     {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T10:52:00"
+    },
+    {
         "server": "863",
         "coin_value": 660.0,
         "quantity": 100,
@@ -35838,6 +36810,12 @@
         "datetime": "2023-09-14T11:06:00"
     },
     {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-14T11:06:00"
+    },
+    {
         "server": "863",
         "coin_value": 740.0,
         "quantity": 100,
@@ -35852,6 +36830,12 @@
     {
         "server": "984",
         "coin_value": 680.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T11:28:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 600.0,
         "quantity": 100,
         "datetime": "2023-09-14T11:28:00"
     },
@@ -35880,10 +36864,22 @@
         "datetime": "2023-09-14T11:57:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.0,
+        "quantity": 2000,
+        "datetime": "2023-09-14T12:28:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-14T12:33:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-14T12:38:00"
     },
     {
         "server": "883",
@@ -35908,6 +36904,12 @@
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-14T13:26:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T13:30:00"
     },
     {
         "server": "862",
@@ -36018,6 +37020,12 @@
         "datetime": "2023-09-14T15:54:00"
     },
     {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T16:07:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
@@ -36114,6 +37122,12 @@
         "datetime": "2023-09-14T17:18:00"
     },
     {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-14T17:19:00"
+    },
+    {
         "server": "913",
         "coin_value": 700.0,
         "quantity": 100,
@@ -36190,6 +37204,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-14T18:50:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T19:01:00"
     },
     {
         "server": "883",
@@ -36307,6 +37327,18 @@
     },
     {
         "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T20:37:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-14T20:40:00"
+    },
+    {
+        "server": "984",
         "coin_value": 670.0,
         "quantity": 100,
         "datetime": "2023-09-14T20:42:00"
@@ -36400,6 +37432,12 @@
         "coin_value": 703.0,
         "quantity": 100,
         "datetime": "2023-09-14T21:28:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-14T21:30:00"
     },
     {
         "server": "913",
@@ -36888,6 +37926,12 @@
         "datetime": "2023-09-15T11:15:00"
     },
     {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-15T11:37:00"
+    },
+    {
         "server": "862",
         "coin_value": 680.0,
         "quantity": 100,
@@ -36936,6 +37980,18 @@
         "datetime": "2023-09-15T13:42:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-15T13:54:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-15T14:18:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 1000,
@@ -36952,6 +38008,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-15T14:34:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-15T14:45:00"
     },
     {
         "server": "984",
@@ -36982,6 +38044,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-15T15:04:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-15T15:06:00"
     },
     {
         "server": "883",
@@ -37074,6 +38142,12 @@
         "datetime": "2023-09-15T16:30:00"
     },
     {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-15T16:40:00"
+    },
+    {
         "server": "913",
         "coin_value": 700.0,
         "quantity": 100,
@@ -37090,6 +38164,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-15T17:27:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-15T17:30:00"
     },
     {
         "server": "862",
@@ -37164,6 +38244,12 @@
         "datetime": "2023-09-15T19:10:00"
     },
     {
+        "server": "863",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-15T19:13:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 500,
@@ -37174,6 +38260,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-15T19:17:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-15T19:21:00"
     },
     {
         "server": "863",
@@ -37210,6 +38302,12 @@
         "coin_value": 670.0,
         "quantity": 100,
         "datetime": "2023-09-15T19:39:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 620.0,
+        "quantity": 1000,
+        "datetime": "2023-09-15T19:40:00"
     },
     {
         "server": "862",
@@ -37326,6 +38424,12 @@
         "datetime": "2023-09-15T21:07:00"
     },
     {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-15T21:07:00"
+    },
+    {
         "server": "863",
         "coin_value": 701.0,
         "quantity": 100,
@@ -37411,9 +38515,21 @@
     },
     {
         "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-15T21:50:00"
+    },
+    {
+        "server": "984",
         "coin_value": 701.0,
         "quantity": 100,
         "datetime": "2023-09-15T21:52:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-15T21:54:00"
     },
     {
         "server": "984",
@@ -37459,6 +38575,12 @@
     },
     {
         "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-15T22:11:00"
+    },
+    {
+        "server": "984",
         "coin_value": 701.0,
         "quantity": 100,
         "datetime": "2023-09-15T22:12:00"
@@ -37486,6 +38608,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-15T22:29:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-15T22:30:00"
     },
     {
         "server": "944",
@@ -37572,6 +38700,12 @@
         "datetime": "2023-09-15T23:16:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-15T23:17:00"
+    },
+    {
         "server": "984",
         "coin_value": 680.0,
         "quantity": 100,
@@ -37641,6 +38775,12 @@
         "server": "913",
         "coin_value": 700.0,
         "quantity": 1000,
+        "datetime": "2023-09-15T23:44:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
         "datetime": "2023-09-15T23:44:00"
     },
     {
@@ -37719,6 +38859,12 @@
         "server": "883",
         "coin_value": 700.0,
         "quantity": 100,
+        "datetime": "2023-09-16T00:22:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
         "datetime": "2023-09-16T00:22:00"
     },
     {
@@ -37806,6 +38952,12 @@
         "datetime": "2023-09-16T01:59:00"
     },
     {
+        "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-16T01:59:00"
+    },
+    {
         "server": "862",
         "coin_value": 680.0,
         "quantity": 100,
@@ -37848,6 +39000,12 @@
         "datetime": "2023-09-16T04:33:00"
     },
     {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-16T06:33:00"
+    },
+    {
         "server": "863",
         "coin_value": 670.0,
         "quantity": 333,
@@ -37858,6 +39016,12 @@
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-16T07:05:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 200,
+        "datetime": "2023-09-16T07:09:00"
     },
     {
         "server": "862",
@@ -37900,6 +39064,12 @@
         "coin_value": 714.285,
         "quantity": 1540,
         "datetime": "2023-09-16T09:50:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-16T10:05:00"
     },
     {
         "server": "862",
@@ -37954,6 +39124,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-16T11:23:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-16T11:26:00"
     },
     {
         "server": "984",
@@ -38032,6 +39208,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-16T12:35:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-16T12:39:00"
     },
     {
         "server": "862",
@@ -38233,6 +39415,12 @@
     },
     {
         "server": "883",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-16T15:16:00"
+    },
+    {
+        "server": "883",
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-16T15:19:00"
@@ -38394,6 +39582,12 @@
         "datetime": "2023-09-16T17:34:00"
     },
     {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-16T17:37:00"
+    },
+    {
         "server": "862",
         "coin_value": 680.0,
         "quantity": 100,
@@ -38418,6 +39612,12 @@
         "datetime": "2023-09-16T18:03:00"
     },
     {
+        "server": "984",
+        "coin_value": 600.0,
+        "quantity": 200,
+        "datetime": "2023-09-16T18:07:00"
+    },
+    {
         "server": "862",
         "coin_value": 670.67,
         "quantity": 999,
@@ -38428,6 +39628,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-16T18:14:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-16T18:16:00"
     },
     {
         "server": "984",
@@ -38868,6 +40074,12 @@
         "datetime": "2023-09-16T22:19:00"
     },
     {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-16T22:27:00"
+    },
+    {
         "server": "862",
         "coin_value": 680.0,
         "quantity": 100,
@@ -38887,6 +40099,12 @@
     },
     {
         "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-16T22:34:00"
+    },
+    {
+        "server": "984",
         "coin_value": 691.0,
         "quantity": 100,
         "datetime": "2023-09-16T22:39:00"
@@ -38896,6 +40114,12 @@
         "coin_value": 730.0,
         "quantity": 100,
         "datetime": "2023-09-16T22:40:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-16T22:41:00"
     },
     {
         "server": "944",
@@ -38932,6 +40156,12 @@
         "coin_value": 670.67,
         "quantity": 999,
         "datetime": "2023-09-16T23:23:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-16T23:26:00"
     },
     {
         "server": "862",
@@ -38989,9 +40219,33 @@
     },
     {
         "server": "883",
+        "coin_value": 630.63,
+        "quantity": 999,
+        "datetime": "2023-09-17T00:00:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-17T00:00:00"
+    },
+    {
+        "server": "883",
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-17T00:09:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-17T00:13:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 571.428,
+        "quantity": 7140,
+        "datetime": "2023-09-17T00:16:00"
     },
     {
         "server": "984",
@@ -39102,6 +40356,12 @@
         "datetime": "2023-09-17T01:32:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-17T01:59:00"
+    },
+    {
         "server": "913",
         "coin_value": 740.0,
         "quantity": 750,
@@ -39114,16 +40374,34 @@
         "datetime": "2023-09-17T02:39:00"
     },
     {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T02:43:00"
+    },
+    {
         "server": "863",
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-17T02:46:00"
     },
     {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T03:02:00"
+    },
+    {
         "server": "862",
         "coin_value": 670.67,
         "quantity": 999,
         "datetime": "2023-09-17T03:27:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-17T03:39:00"
     },
     {
         "server": "883",
@@ -39142,6 +40420,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-17T06:07:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 649.878,
+        "quantity": 1231,
+        "datetime": "2023-09-17T06:54:00"
     },
     {
         "server": "883",
@@ -39216,6 +40500,12 @@
         "datetime": "2023-09-17T10:50:00"
     },
     {
+        "server": "984",
+        "coin_value": 500.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T10:58:00"
+    },
+    {
         "server": "883",
         "coin_value": 710.0,
         "quantity": 100,
@@ -39238,6 +40528,18 @@
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-17T11:16:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T11:29:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T11:34:00"
     },
     {
         "server": "984",
@@ -39328,6 +40630,12 @@
         "coin_value": 720.0,
         "quantity": 1000,
         "datetime": "2023-09-17T13:01:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-17T13:03:00"
     },
     {
         "server": "862",
@@ -39516,6 +40824,12 @@
         "datetime": "2023-09-17T14:41:00"
     },
     {
+        "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-17T14:41:00"
+    },
+    {
         "server": "913",
         "coin_value": 690.0,
         "quantity": 100,
@@ -39544,6 +40858,12 @@
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-17T14:54:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T14:55:00"
     },
     {
         "server": "984",
@@ -39576,16 +40896,34 @@
         "datetime": "2023-09-17T15:04:00"
     },
     {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-17T15:06:00"
+    },
+    {
         "server": "862",
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-17T15:10:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-17T15:13:00"
+    },
+    {
         "server": "984",
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-17T15:13:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-17T15:18:00"
     },
     {
         "server": "984",
@@ -39684,6 +41022,12 @@
         "datetime": "2023-09-17T15:59:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-17T16:02:00"
+    },
+    {
         "server": "944",
         "coin_value": 680.0,
         "quantity": 100,
@@ -39698,6 +41042,12 @@
     {
         "server": "913",
         "coin_value": 680.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T16:09:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
         "quantity": 100,
         "datetime": "2023-09-17T16:09:00"
     },
@@ -39730,6 +41080,18 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-17T16:44:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-17T16:51:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-17T16:56:00"
     },
     {
         "server": "863",
@@ -39822,6 +41184,12 @@
         "datetime": "2023-09-17T18:03:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-17T18:05:00"
+    },
+    {
         "server": "913",
         "coin_value": 688.679,
         "quantity": 106,
@@ -39840,9 +41208,21 @@
         "datetime": "2023-09-17T18:22:00"
     },
     {
+        "server": "913",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-17T18:26:00"
+    },
+    {
         "server": "862",
         "coin_value": 720.0,
         "quantity": 1000,
+        "datetime": "2023-09-17T18:34:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
         "datetime": "2023-09-17T18:34:00"
     },
     {
@@ -39886,6 +41266,12 @@
         "coin_value": 670.0,
         "quantity": 100,
         "datetime": "2023-09-17T18:57:00"
+    },
+    {
+        "server": "883",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T18:58:00"
     },
     {
         "server": "862",
@@ -39990,6 +41376,12 @@
         "datetime": "2023-09-17T20:08:00"
     },
     {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-17T20:13:00"
+    },
+    {
         "server": "913",
         "coin_value": 686.735,
         "quantity": 1063,
@@ -40087,6 +41479,12 @@
     },
     {
         "server": "984",
+        "coin_value": 640.64,
+        "quantity": 999,
+        "datetime": "2023-09-17T21:23:00"
+    },
+    {
+        "server": "984",
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-17T21:24:00"
@@ -40132,6 +41530,12 @@
         "coin_value": 711.0,
         "quantity": 100,
         "datetime": "2023-09-17T21:47:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 630.0,
+        "quantity": 10000,
+        "datetime": "2023-09-17T21:48:00"
     },
     {
         "server": "944",
@@ -40458,6 +41862,12 @@
         "datetime": "2023-09-18T01:56:00"
     },
     {
+        "server": "944",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-18T02:07:00"
+    },
+    {
         "server": "883",
         "coin_value": 688.679,
         "quantity": 106,
@@ -40626,6 +42036,12 @@
         "datetime": "2023-09-18T11:39:00"
     },
     {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T11:40:00"
+    },
+    {
         "server": "862",
         "coin_value": 680.0,
         "quantity": 100,
@@ -40692,6 +42108,18 @@
         "datetime": "2023-09-18T13:08:00"
     },
     {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T13:12:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T13:15:00"
+    },
+    {
         "server": "862",
         "coin_value": 730.0,
         "quantity": 1000,
@@ -40728,6 +42156,12 @@
         "datetime": "2023-09-18T13:59:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-18T14:41:00"
+    },
+    {
         "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
@@ -40746,10 +42180,40 @@
         "datetime": "2023-09-18T15:08:00"
     },
     {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T15:17:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T15:17:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-18T15:18:00"
+    },
+    {
         "server": "913",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-18T15:28:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T15:33:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-18T16:11:00"
     },
     {
         "server": "862",
@@ -40812,6 +42276,12 @@
         "datetime": "2023-09-18T17:29:00"
     },
     {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T17:39:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 1000,
@@ -40836,6 +42306,12 @@
         "datetime": "2023-09-18T18:07:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-18T18:08:00"
+    },
+    {
         "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
@@ -40854,10 +42330,22 @@
         "datetime": "2023-09-18T18:24:00"
     },
     {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-18T18:31:00"
+    },
+    {
         "server": "883",
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-18T18:44:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-18T18:51:00"
     },
     {
         "server": "862",
@@ -40920,9 +42408,21 @@
         "datetime": "2023-09-18T20:02:00"
     },
     {
+        "server": "883",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-18T20:03:00"
+    },
+    {
         "server": "862",
         "coin_value": 690.0,
         "quantity": 100,
+        "datetime": "2023-09-18T20:03:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 632.075,
+        "quantity": 106,
         "datetime": "2023-09-18T20:03:00"
     },
     {
@@ -40982,6 +42482,12 @@
     {
         "server": "862",
         "coin_value": 690.0,
+        "quantity": 100,
+        "datetime": "2023-09-18T20:28:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
         "quantity": 100,
         "datetime": "2023-09-18T20:28:00"
     },
@@ -41074,6 +42580,12 @@
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-18T21:04:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-18T21:06:00"
     },
     {
         "server": "862",
@@ -41311,6 +42823,12 @@
     },
     {
         "server": "863",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-18T22:54:00"
+    },
+    {
+        "server": "863",
         "coin_value": 701.0,
         "quantity": 100,
         "datetime": "2023-09-18T22:58:00"
@@ -41449,6 +42967,12 @@
     },
     {
         "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-19T00:03:00"
+    },
+    {
+        "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-19T00:29:00"
@@ -41478,6 +43002,18 @@
         "datetime": "2023-09-19T00:45:00"
     },
     {
+        "server": "863",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T01:15:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-19T02:45:00"
+    },
+    {
         "server": "862",
         "coin_value": 670.223,
         "quantity": 2999,
@@ -41500,6 +43036,18 @@
         "coin_value": 675.0,
         "quantity": 100,
         "datetime": "2023-09-19T05:30:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T08:23:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T08:24:00"
     },
     {
         "server": "862",
@@ -41526,6 +43074,12 @@
         "datetime": "2023-09-19T10:09:00"
     },
     {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-19T10:13:00"
+    },
+    {
         "server": "862",
         "coin_value": 675.0,
         "quantity": 100,
@@ -41550,10 +43104,34 @@
         "datetime": "2023-09-19T10:57:00"
     },
     {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T11:53:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-19T11:56:00"
+    },
+    {
         "server": "883",
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-19T13:18:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T13:22:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T13:33:00"
     },
     {
         "server": "883",
@@ -41568,10 +43146,22 @@
         "datetime": "2023-09-19T13:35:00"
     },
     {
+        "server": "944",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T13:42:00"
+    },
+    {
         "server": "883",
         "coin_value": 660.0,
         "quantity": 100,
         "datetime": "2023-09-19T13:51:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-19T14:07:00"
     },
     {
         "server": "862",
@@ -41602,6 +43192,12 @@
         "coin_value": 670.0,
         "quantity": 100,
         "datetime": "2023-09-19T15:03:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-19T15:10:00"
     },
     {
         "server": "862",
@@ -41658,6 +43254,12 @@
         "datetime": "2023-09-19T16:51:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-19T16:53:00"
+    },
+    {
         "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
@@ -41710,6 +43312,12 @@
         "coin_value": 710.0,
         "quantity": 1000,
         "datetime": "2023-09-19T18:00:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-19T18:07:00"
     },
     {
         "server": "883",
@@ -41904,6 +43512,12 @@
         "datetime": "2023-09-19T21:16:00"
     },
     {
+        "server": "883",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T21:17:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -41964,6 +43578,12 @@
         "datetime": "2023-09-19T21:50:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-19T21:53:00"
+    },
+    {
         "server": "863",
         "coin_value": 680.0,
         "quantity": 100,
@@ -41994,14 +43614,32 @@
         "datetime": "2023-09-19T22:06:00"
     },
     {
+        "server": "913",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-19T22:08:00"
+    },
+    {
         "server": "862",
         "coin_value": 720.0,
         "quantity": 500,
         "datetime": "2023-09-19T22:09:00"
     },
     {
+        "server": "863",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-19T22:10:00"
+    },
+    {
         "server": "862",
         "coin_value": 710.0,
+        "quantity": 100,
+        "datetime": "2023-09-19T22:15:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 600.0,
         "quantity": 100,
         "datetime": "2023-09-19T22:15:00"
     },
@@ -42034,6 +43672,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-19T22:42:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-19T22:48:00"
     },
     {
         "server": "984",
@@ -42138,6 +43782,12 @@
         "datetime": "2023-09-20T00:15:00"
     },
     {
+        "server": "862",
+        "coin_value": 625.0,
+        "quantity": 160,
+        "datetime": "2023-09-20T00:16:00"
+    },
+    {
         "server": "913",
         "coin_value": 680.0,
         "quantity": 100,
@@ -42160,6 +43810,18 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-20T00:40:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-20T00:40:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-20T00:43:00"
     },
     {
         "server": "862",
@@ -42204,6 +43866,12 @@
         "datetime": "2023-09-20T01:16:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-20T01:17:00"
+    },
+    {
         "server": "944",
         "coin_value": 710.0,
         "quantity": 100,
@@ -42232,6 +43900,18 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-20T01:54:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 625.0,
+        "quantity": 160,
+        "datetime": "2023-09-20T03:46:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-20T04:13:00"
     },
     {
         "server": "883",
@@ -42286,6 +43966,12 @@
         "coin_value": 675.0,
         "quantity": 100,
         "datetime": "2023-09-20T14:27:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 771.401,
+        "quantity": 1063,
+        "datetime": "2023-09-20T14:38:00"
     },
     {
         "server": "984",
@@ -42480,6 +44166,12 @@
         "datetime": "2023-09-20T17:30:00"
     },
     {
+        "server": "862",
+        "coin_value": 625.0,
+        "quantity": 160,
+        "datetime": "2023-09-20T17:31:00"
+    },
+    {
         "server": "883",
         "coin_value": 700.0,
         "quantity": 100,
@@ -42490,6 +44182,12 @@
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-20T17:42:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-20T17:43:00"
     },
     {
         "server": "862",
@@ -42507,6 +44205,12 @@
         "server": "913",
         "coin_value": 660.66,
         "quantity": 999,
+        "datetime": "2023-09-20T18:07:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
         "datetime": "2023-09-20T18:07:00"
     },
     {
@@ -42588,6 +44292,18 @@
         "datetime": "2023-09-20T18:51:00"
     },
     {
+        "server": "863",
+        "coin_value": 650.943,
+        "quantity": 106,
+        "datetime": "2023-09-20T18:54:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-20T18:55:00"
+    },
+    {
         "server": "984",
         "coin_value": 705.0,
         "quantity": 100,
@@ -42640,6 +44356,12 @@
         "coin_value": 680.0,
         "quantity": 100,
         "datetime": "2023-09-20T19:17:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-20T19:22:00"
     },
     {
         "server": "883",
@@ -43512,6 +45234,12 @@
         "datetime": "2023-09-21T02:32:00"
     },
     {
+        "server": "863",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-21T02:37:00"
+    },
+    {
         "server": "862",
         "coin_value": 700.0,
         "quantity": 100,
@@ -43543,6 +45271,12 @@
     },
     {
         "server": "944",
+        "coin_value": 650.0,
+        "quantity": 100,
+        "datetime": "2023-09-21T03:52:00"
+    },
+    {
+        "server": "944",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-21T04:35:00"
@@ -43554,10 +45288,22 @@
         "datetime": "2023-09-21T04:50:00"
     },
     {
+        "server": "862",
+        "coin_value": 625.0,
+        "quantity": 160,
+        "datetime": "2023-09-21T06:48:00"
+    },
+    {
         "server": "944",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-21T07:21:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 625.0,
+        "quantity": 160,
+        "datetime": "2023-09-21T08:30:00"
     },
     {
         "server": "883",
@@ -43890,6 +45636,12 @@
         "datetime": "2023-09-21T16:30:00"
     },
     {
+        "server": "883",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-21T16:34:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
@@ -43948,6 +45700,12 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2023-09-21T17:26:00"
+    },
+    {
+        "server": "863",
+        "coin_value": 650.943,
+        "quantity": 106,
+        "datetime": "2023-09-21T17:27:00"
     },
     {
         "server": "862",
@@ -44113,6 +45871,12 @@
     },
     {
         "server": "863",
+        "coin_value": 650.943,
+        "quantity": 106,
+        "datetime": "2023-09-21T19:08:00"
+    },
+    {
+        "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-21T19:19:00"
@@ -44163,6 +45927,12 @@
         "server": "883",
         "coin_value": 660.0,
         "quantity": 100,
+        "datetime": "2023-09-21T20:02:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
         "datetime": "2023-09-21T20:02:00"
     },
     {
@@ -44256,6 +46026,12 @@
         "datetime": "2023-09-21T20:42:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-21T20:45:00"
+    },
+    {
         "server": "863",
         "coin_value": 700.0,
         "quantity": 100,
@@ -44304,10 +46080,22 @@
         "datetime": "2023-09-21T21:29:00"
     },
     {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-21T21:31:00"
+    },
+    {
         "server": "863",
         "coin_value": 681.0,
         "quantity": 100,
         "datetime": "2023-09-21T21:32:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-21T21:33:00"
     },
     {
         "server": "913",
@@ -44338,6 +46126,18 @@
         "coin_value": 711.0,
         "quantity": 100,
         "datetime": "2023-09-21T21:43:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-21T21:45:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 622.641,
+        "quantity": 106,
+        "datetime": "2023-09-21T21:46:00"
     },
     {
         "server": "883",
@@ -44413,6 +46213,18 @@
     },
     {
         "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-21T22:17:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-21T22:18:00"
+    },
+    {
+        "server": "862",
         "coin_value": 720.0,
         "quantity": 5000,
         "datetime": "2023-09-21T22:20:00"
@@ -44454,9 +46266,21 @@
         "datetime": "2023-09-21T22:41:00"
     },
     {
+        "server": "863",
+        "coin_value": 650.943,
+        "quantity": 106,
+        "datetime": "2023-09-21T22:46:00"
+    },
+    {
         "server": "944",
         "coin_value": 710.0,
         "quantity": 100,
+        "datetime": "2023-09-21T22:47:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
         "datetime": "2023-09-21T22:47:00"
     },
     {
@@ -44602,6 +46426,12 @@
         "coin_value": 660.66,
         "quantity": 999,
         "datetime": "2023-09-22T01:07:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 600.0,
+        "quantity": 100,
+        "datetime": "2023-09-22T02:24:00"
     },
     {
         "server": "863",
@@ -45090,10 +46920,22 @@
         "datetime": "2023-09-22T18:35:00"
     },
     {
+        "server": "883",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-22T18:36:00"
+    },
+    {
         "server": "984",
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-22T18:43:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 632.075,
+        "quantity": 106,
+        "datetime": "2023-09-22T18:47:00"
     },
     {
         "server": "883",
@@ -45106,6 +46948,12 @@
         "coin_value": 700.0,
         "quantity": 100,
         "datetime": "2023-09-22T18:50:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 641.509,
+        "quantity": 106,
+        "datetime": "2023-09-22T18:51:00"
     },
     {
         "server": "913",
