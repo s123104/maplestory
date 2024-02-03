@@ -154176,6 +154176,12 @@
         "datetime": "2024-01-16T18:15:00"
     },
     {
+        "server": "863",
+        "coin_value": 588.2,
+        "quantity": 1700,
+        "datetime": "2024-01-16T18:17:00"
+    },
+    {
         "server": "944",
         "coin_value": 630.6,
         "quantity": 999,
@@ -171046,5 +171052,35 @@
         "coin_value": 670.0,
         "quantity": 100,
         "datetime": "2024-02-03T09:06:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 594.3,
+        "quantity": 106,
+        "datetime": "2024-02-03T09:38:00"
+    },
+    {
+        "server": "913",
+        "coin_value": 680.0,
+        "quantity": 1000,
+        "datetime": "2024-02-03T09:43:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 680.0,
+        "quantity": 1000,
+        "datetime": "2024-02-03T09:49:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 700.0,
+        "quantity": 1000,
+        "datetime": "2024-02-03T09:49:00"
+    },
+    {
+        "server": "862",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2024-02-03T09:52:00"
     }
 ]
