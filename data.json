@@ -174382,5 +174382,17 @@
         "coin_value": 710.0,
         "quantity": 100,
         "datetime": "2024-02-26T12:53:00"
+    },
+    {
+        "server": "984",
+        "coin_value": 720.0,
+        "quantity": 100,
+        "datetime": "2024-02-26T13:03:00"
+    },
+    {
+        "server": "944",
+        "coin_value": 700.0,
+        "quantity": 100,
+        "datetime": "2024-02-26T13:09:00"
     }
 ]
