@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="maplestory.ico" type="image/x-icon" />
+    <title>楓幣走勢圖 - Bybit 風格</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+      body {
+        background: linear-gradient(to right, #1e1e1e, #2a2a2a);
+        color: #c3c3c3;
+        font-family: "Arial, sans-serif";
+      }
+
+      #chart {
+        margin-top: 20px;
+        width: 100%;
+        height: 800px;
+      }
+
+      /* 小型屏幕，例如手機 */
+      @media (max-width: 767px), (orientation: portrait) {
+        #chart {
+          height: 600px;
+        }
+      }
+
+      /* 中型屏幕，例如平板 */
+      @media (min-width: 768px) and (max-width: 1023px),
+        (orientation: portrait) {
+        #chart {
+          height: 700px;
+        }
+      }
+
+      /* 切換按鈕樣式 */
+      #switchButton,
+      #chartTypeButton {
+        position: absolute;
+        top: 30px;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #ff9933;
+        color: #fff;
+        transition: background-color 0.3s ease;
+      }
+
+      #switchButton {
+        left: 80px;
+      }
+
+      #chartTypeButton {
+        left: 200px;
+      }
+
+      #switchButton:hover,
+      #chartTypeButton:hover {
+        background-color: #ff7700;
+      }
+
+      /* 作者信息 */
+      #authorInfo {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-style: italic;
+        font-size: 14px;
+      }
+
+      /* 最後更新時間樣式 */
+      #lastUpdated {
+        position: fixed;
+        bottom: 10px;
+        right: 40px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart"></div>
+    <button id="switchButton" onclick="switchVersion()">切換為LP版</button>
+    <button id="chartTypeButton" onclick="switchChartType()">
+      切換為折線圖
+    </button>
+    <div id="authorInfo">
+      作者：阿璋<span style="margin-left: 20px">developed by </span
+      ><a href="https://chat.openai.com/" target="_blank">GPT-4o</a>
+    </div>
+    <div id="lastUpdated">數據更新時間: Loading...</div>
+
+    <script>
+      var currentVersion = "8591";
+      var currentChartType = "candlestick";
+      var chart = null; // 儲存圖表實例
+
+      function renderChart(ohlcData, volumeData, chartType) {
+        if (chart) {
+          chart.destroy();
+        }
+
+        var options = {
+          chart: {
+            height: 800,
+            type: chartType,
+            background: "#1e1e1e",
+            toolbar: {
+              show: true,
+              tools: {
+                reset: true, // 顯示重置縮放按鈕
+                download: true, // 允許數據下載
+              },
+            },
+            zoom: {
+              enabled: true,
+              autoScaleYaxis: true, // 縮放時自動調整 Y 軸
+            },
+            pan: {
+              enabled: true, // 允許拖動圖表
+            },
+            animations: {
+              enabled: false, // 關閉動畫提升性能
+            },
+          },
+          series: [
+            {
+              name: "幣價",
+              type: chartType,
+              data: ohlcData,
+            },
+            {
+              name: "成交量",
+              type: "bar",
+              data: volumeData,
+            },
+          ],
+          xaxis: {
+            type: "datetime",
+            crosshairs: {
+              show: true,
+              width: 1,
+              position: "back",
+              opacity: 0.9,
+            },
+            labels: {
+              datetimeFormatter: {
+                year: "yyyy-MM", // 年-月格式
+                month: "MM-dd", // 月-日格式
+              },
+              style: {
+                colors: "#c3c3c3",
+              },
+            },
+            tooltip: {
+              enabled: true,
+              formatter: function (value) {
+                return new Date(value).toLocaleString("zh-TW", {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                });
+              },
+            },
+          },
+          yaxis: [
+            {
+              opposite: true, // 將價格顯示在右側
+              title: {
+                text: "價格",
+                style: {
+                  color: "#c3c3c3",
+                },
+              },
+              tickAmount: 10, // 保證價格每 100 單位一個刻度
+              labels: {
+                style: {
+                  colors: "#c3c3c3",
+                },
+                formatter: function (value) {
+                  return value.toFixed(0) + " 萬"; // 顯示整數價格，直接加上「萬」
+                },
+              },
+              tooltip: {
+                enabled: true,
+                y: {
+                  formatter: function (val, opts) {
+                    var ohlc =
+                      opts.w.globals.seriesCandleC[opts.dataPointIndex];
+                    var avgPrice = (ohlc[1] + ohlc[2]) / 2; // 計算平均價
+
+                    return (
+                      "開盤: " +
+                      Math.round(ohlc[0]) +
+                      " 萬<br>最高: " +
+                      Math.round(ohlc[1]) +
+                      " 萬<br>最低: " +
+                      Math.round(ohlc[2]) +
+                      " 萬<br>收盤: " +
+                      Math.round(ohlc[3]) +
+                      " 萬<br>平均價: " +
+                      Math.round(avgPrice) +
+                      " 萬"
+                    );
+                  },
+                },
+              },
+              colors: ["#E82D3A", "#2AA759"], // 修改紅綠色
+            },
+            {
+              opposite: false, // 成交量也顯示在右側
+              title: {
+                text: "成交量",
+                style: {
+                  color: "#c3c3c3",
+                },
+              },
+              labels: {
+                style: {
+                  colors: "#c3c3c3",
+                },
+                formatter: function (value) {
+                  return (value / 1000).toFixed(1) + "K"; // 以 K 為單位顯示成交量
+                },
+              },
+            },
+          ],
+          plotOptions: {
+            candlestick: {
+              colors: {
+                upward: "#E82D3A", // K 線紅色
+                downward: "#2AA759", // K 線綠色
+              },
+            },
+          },
+          annotations: {
+            yaxis: [
+              {
+                y: 7000,
+                borderColor: "#00E396",
+                label: {
+                  text: "支撐線",
+                },
+              },
+            ],
+            // xaxis: [
+            //   {
+            //     x: new Date("2024-05-01").getTime(),
+            //     borderColor: "#775DD0",
+            //     label: {
+            //       text: "重大事件",
+            //     },
+            //   },
+            // ],
+          },
+          tooltip: {
+            theme: "dark",
+            x: {
+              format: "yyyy/MM/dd HH:mm",
+            },
+            y: {
+              formatter: function (value) {
+                return value.toFixed(2); // 顯示價格和成交量
+              },
+            },
+          },
+          grid: {
+            borderColor: "#404040",
+          },
+        };
+
+        chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      }
+
+      function fetchData() {
+        fetch("data.json")
+          .then((response) => response.json())
+          .then((jsonData) => {
+            jsonData.forEach(function (item) {
+              var utcDateTime = new Date(item.datetime);
+              var taiwanDateTime = new Date(
+                utcDateTime.getTime() + 8 * 60 * 60 * 1000
+              );
+              item.datetime = taiwanDateTime;
+            });
+
+            var groupedData = {};
+            jsonData.forEach(function (item) {
+              var dateKey = item.datetime.toISOString().split("T")[0];
+              if (!groupedData[dateKey]) {
+                groupedData[dateKey] = {
+                  date: dateKey,
+                  open: item.coin_value,
+                  high: item.coin_value,
+                  low: item.coin_value,
+                  close: item.coin_value,
+                  volume: item.quantity,
+                };
+              } else {
+                var group = groupedData[dateKey];
+                group.high = Math.max(group.high, item.coin_value);
+                group.low = Math.min(group.low, item.coin_value);
+                group.close = item.coin_value;
+                group.volume += item.quantity;
+              }
+            });
+
+            var klineData = Object.values(groupedData);
+            klineData.sort(function (a, b) {
+              return new Date(a.date) - new Date(b.date);
+            });
+
+            if (currentVersion === "LP") {
+              klineData.forEach(function (item) {
+                item.open /= 0.94;
+                item.high /= 0.94;
+                item.low /= 0.94;
+                item.close /= 0.94;
+              });
+            }
+
+            var ohlcData = klineData.map((d) => ({
+              x: d.date,
+              y: [d.open, d.high, d.low, d.close],
+            }));
+
+            var volumeData = klineData.map((d) => ({
+              x: d.date,
+              y: d.volume,
+            }));
+
+            renderChart(ohlcData, volumeData, currentChartType);
+
+            var lastData =
+              jsonData[jsonData.length - 1].datetime - 8 * 60 * 60 * 1000;
+            var formattedTime = new Date(lastData).toLocaleString("zh-TW", {
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+            document.getElementById("lastUpdated").textContent =
+              "數據更新時間: " + formattedTime;
+          })
+          .catch((error) => {
+            console.error("讀取數據時出錯：", error);
+          });
+      }
+
+      function switchVersion() {
+        currentVersion = currentVersion === "8591" ? "LP" : "8591";
+        document.getElementById("switchButton").innerText =
+          currentVersion === "8591" ? "切換為LP版" : "切換為8591版";
+        fetchData();
+      }
+
+      function switchChartType() {
+        currentChartType =
+          currentChartType === "candlestick" ? "line" : "candlestick";
+        document.getElementById("chartTypeButton").innerText =
+          currentChartType === "candlestick" ? "切換為折線圖" : "切換為K線圖";
+        fetchData();
+      }
+
+      // 定時自動更新數據
+      setInterval(() => {
+        fetchData();
+      }, 30000); // 每 30 秒更新一次數據
+
+      fetchData();
+    </script>
+  </body>
+</html>
