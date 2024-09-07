@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="maplestory.ico" type="image/x-icon" />
+    <title>
+      楓幣幣價 - 楓幣歷史價格 - 楓幣 - 楓幣走勢圖 - 楓幣歷史價 - 楓谷幣價
+    </title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
+                950: "#172554",
+              },
+            },
+          },
+          fontFamily: {
+            body: [
+              "Inter",
+              "ui-sans-serif",
+              "system-ui",
+              "-apple-system",
+              "system-ui",
+              "Segoe UI",
+              "Roboto",
+              "Helvetica Neue",
+              "Arial",
+              "Noto Sans",
+              "sans-serif",
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              "Noto Color Emoji",
+            ],
+            sans: [
+              "Inter",
+              "ui-sans-serif",
+              "system-ui",
+              "-apple-system",
+              "system-ui",
+              "Segoe UI",
+              "Roboto",
+              "Helvetica Neue",
+              "Arial",
+              "Noto Sans",
+              "sans-serif",
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              "Noto Color Emoji",
+            ],
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900">
+    <div class="relative min-h-screen">
+      <!-- Background Animation -->
+      <div
+        class="absolute -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="absolute -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="px-4 py-8 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
+            楓幣歷史走勢圖
+          </h2>
+          <p
+            class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
+            id="lastUpdated"
+          >
+            數據更新時間: Loading...
+          </p>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <button
+            id="switchVersionBtn"
+            class="transition-all duration-300 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-primary-900 text-white hover:scale-105"
+          >
+            切換為LP版
+          </button>
+          <button
+            id="switchChartTypeBtn"
+            class="transition-all duration-300 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-primary-900 text-white hover:scale-105"
+          >
+            切換為K線圖
+          </button>
+          <button
+            id="toggleDarkModeBtn"
+            class="transition-all duration-300 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-gray-800 text-gray-900 dark:text-white hover:scale-105"
+          >
+            切換深色模式
+          </button>
+        </div>
+
+        <!-- Chart -->
+        <div id="chart" class="w-full h-[70vh] mb-8"></div>
+
+        <!-- Orientation Guide -->
+        <div
+          id="orientationGuide"
+          class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        >
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl text-center"
+          >
+            <p class="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+              請將設備翻轉為橫向以獲得更好的顯示效果
+            </p>
+            <button
+              id="dismissGuide"
+              class="bg-primary-600 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded transition-all duration-300 hover:scale-105"
+            >
+              我知道了
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >作者：阿璋</span
+        >
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a
+              href="https://chat.openai.com/"
+              class="mr-4 hover:underline md:mr-6"
+              >Developed by GPT-3.5</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      let currentVersion = "8591";
+      let chartType = "line";
+      let chartData;
+      let isPortrait = window.innerHeight > window.innerWidth;
+
+      function fetchData() {
+        return fetch("data.json")
+          .then((response) => response.json())
+          .then((jsonData) => {
+            chartData = processData(jsonData);
+            updateChart();
+            updateLastUpdated(jsonData);
+          })
+          .catch((error) => {
+            console.error("讀取數據時出錯：", error);
+          });
+      }
+
+      function processData(jsonData) {
+        jsonData.forEach((item) => {
+          var utcDateTime = new Date(item.datetime);
+          var taiwanDateTime = new Date(
+            utcDateTime.getTime() + 8 * 60 * 60 * 1000
+          );
+          item.datetime = taiwanDateTime;
+        });
+
+        var groupedData = {};
+        jsonData.forEach((item) => {
+          var dateKey = item.datetime.toISOString().split("T")[0];
+          if (!groupedData[dateKey]) {
+            groupedData[dateKey] = {
+              date: dateKey,
+              open: item.coin_value,
+              high: item.coin_value,
+              low: item.coin_value,
+              close: item.coin_value,
+              volume: item.quantity,
+            };
+          } else {
+            var group = groupedData[dateKey];
+            group.high = Math.max(group.high, item.coin_value);
+            group.low = Math.min(group.low, item.coin_value);
+            group.close = item.coin_value;
+            group.volume += item.quantity;
+          }
+        });
+
+        return Object.values(groupedData).sort(
+          (a, b) => new Date(a.date) - new Date(b.date)
+        );
+      }
+
+      function updateChart() {
+        const data = chartData.map((item) => ({
+          ...item,
+          open: currentVersion === "LP" ? item.open / 0.94 : item.open,
+          high: currentVersion === "LP" ? item.high / 0.94 : item.high,
+          low: currentVersion === "LP" ? item.low / 0.94 : item.low,
+          close: currentVersion === "LP" ? item.close / 0.94 : item.close,
+        }));
+
+        const startDate = isPortrait
+          ? new Date(Date.now() - 90 * 24 * 60 * 60 * 1000)
+          : new Date(Date.now() - 365 * 24 * 60 * 60 * 1000);
+
+        const filteredData = data.filter((d) => new Date(d.date) >= startDate);
+
+        let traces;
+        if (chartType === "candlestick") {
+          traces = [
+            {
+              x: filteredData.map((d) => d.date),
+              close: filteredData.map((d) => d.close),
+              high: filteredData.map((d) => d.high),
+              low: filteredData.map((d) => d.low),
+              open: filteredData.map((d) => d.open),
+              type: "candlestick",
+              xaxis: "x",
+              yaxis: "y1",
+              increasing: { line: { color: "#26a69a" } },
+              decreasing: { line: { color: "#ef5350" } },
+            },
+            {
+              x: filteredData.map((d) => d.date),
+              y: filteredData.map((d) => d.volume),
+              type: "bar",
+              yaxis: "y2",
+              marker: {
+                color: filteredData.map((d) =>
+                  d.close > d.open ? "#26a69a" : "#ef5350"
+                ),
+                opacity: 0.7,
+              },
+            },
+          ];
+        } else {
+          traces = [
+            {
+              x: filteredData.map((d) => d.date),
+              y: filteredData.map((d) => d.close),
+              type: "scatter",
+              mode: "lines",
+              line: { color: "#2196f3" },
+              yaxis: "y1",
+            },
+            {
+              x: filteredData.map((d) => d.date),
+              y: filteredData.map((d) => d.volume),
+              type: "bar",
+              yaxis: "y2",
+              marker: { color: "#90a4ae", opacity: 0.7 },
+            },
+          ];
+        }
+
+        const layout = {
+          dragmode: "zoom",
+          showlegend: false,
+          xaxis: {
+            rangeslider: { visible: false },
+            title: "日期",
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+          },
+          yaxis: {
+            title: "幣價(萬)",
+            side: "right",
+            domain: [0.3, 1],
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+          },
+          yaxis2: {
+            title: "成交量",
+            side: "right",
+            overlaying: "y",
+            domain: [0, 0.2],
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+          },
+          plot_bgcolor: document.documentElement.classList.contains("dark")
+            ? "#1f2937"
+            : "#ffffff",
+          paper_bgcolor: document.documentElement.classList.contains("dark")
+            ? "#1f2937"
+            : "#ffffff",
+          font: {
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+          },
+        };
+
+        Plotly.newPlot("chart", traces, layout, {
+          responsive: true,
+          displayModeBar: true,
+          modeBarButtonsToRemove: ["toImage", "sendDataToCloud"],
+          displaylogo: false,
+        });
+      }
+
+      function updateLastUpdated(jsonData) {
+        const lastData = new Date(jsonData[jsonData.length - 1].datetime);
+        const formattedTime = lastData.toLocaleString("zh-TW", {
+          timeZone: "Asia/Taipei",
+        });
+        document.getElementById("lastUpdated").textContent =
+          "數據更新時間: " + formattedTime;
+      }
+
+      function switchVersion() {
+        currentVersion = currentVersion === "8591" ? "LP" : "8591";
+        document.getElementById("switchVersionBtn").textContent = `切換為${
+          currentVersion === "LP" ? "8591" : "LP"
+        }版`;
+        updateChart();
+      }
+
+      function switchChartType() {
+        chartType = chartType === "line" ? "candlestick" : "line";
+        document.getElementById("switchChartTypeBtn").textContent = `切換為${
+          chartType === "line" ? "K線" : "折線"
+        }圖`;
+        updateChart();
+      }
+
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+        updateChart();
+      }
+
+      function checkOrientation() {
+        isPortrait = window.innerHeight > window.innerWidth;
+        if (isPortrait) {
+          document
+            .getElementById("orientationGuide")
+            .classList.remove("hidden");
+        } else {
+          document.getElementById("orientationGuide").classList.add("hidden");
+        }
+        updateChart();
+      }
+
+      // Event Listeners
+      document
+        .getElementById("switchVersionBtn")
+        .addEventListener("click", switchVersion);
+      document
+        .getElementById("switchChartTypeBtn")
+        .addEventListener("click", switchChartType);
+      document
+        .getElementById("toggleDarkModeBtn")
+        .addEventListener("click", toggleDarkMode);
+      document.getElementById("dismissGuide").addEventListener("click", () => {
+        document.getElementById("orientationGuide").classList.add("hidden");
+      });
+
+      window.addEventListener("resize", checkOrientation);
+      window.addEventListener("orientationchange", checkOrientation);
+
+      // Initial setup
+      fetchData();
+      checkOrientation();
+    </script>
+  </body>
+</html>
