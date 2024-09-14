@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="maplestory.ico" type="image/x-icon" />
+    <title>
+      楓幣價格走勢圖 - 楓幣歷史價格 - 楓幣 - 楓幣走勢圖 - 楓幣歷史價 - 楓谷幣價
+    </title>
+    <!-- 引入 Plotly.js 庫 -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
+                950: "#172554",
+              },
+            },
+            fontFamily: {
+              sans: [
+                "Noto Sans TC",
+                "Inter",
+                "Helvetica",
+                "Arial",
+                "sans-serif",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900">
+    <div class="relative min-h-screen">
+      <!-- 背景動畫 -->
+      <div
+        class="absolute -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="absolute -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+
+      <!-- 主內容 -->
+      <div class="px-4 py-8 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <!-- 頂部標題 -->
+        <h1
+          class="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-8"
+        >
+          楓幣價格走勢圖
+        </h1>
+
+        <!-- 標題區域 -->
+        <div class="flex flex-wrap items-center justify-between mb-4">
+          <div class="flex items-center mb-4 md:mb-0">
+            <!-- 楓幣圖標 -->
+            <img src="maplecoin.png" alt="MS" class="h-10 w-10 mr-2" />
+            <h2
+              class="text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+            >
+              MS/TWD
+            </h2>
+          </div>
+          <!-- 週期按鈕 -->
+          <div class="flex space-x-2">
+            <button
+              onclick="changeTimeFrame('1M')"
+              class="text-sm bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-medium py-1 px-2 rounded"
+            >
+              1月
+            </button>
+            <button
+              onclick="changeTimeFrame('3M')"
+              class="text-sm bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-medium py-1 px-2 rounded"
+            >
+              3月
+            </button>
+            <button
+              onclick="changeTimeFrame('6M')"
+              class="text-sm bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-medium py-1 px-2 rounded"
+            >
+              6月
+            </button>
+            <button
+              onclick="changeTimeFrame('1Y')"
+              class="text-sm bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-medium py-1 px-2 rounded"
+            >
+              1年
+            </button>
+            <button
+              onclick="changeTimeFrame('ALL')"
+              class="text-sm bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-medium py-1 px-2 rounded"
+            >
+              全部
+            </button>
+          </div>
+        </div>
+
+        <!-- 圖表 -->
+        <div id="chart" class="w-full h-[70vh] mb-8"></div>
+
+        <!-- 控制按鈕 -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <button
+            id="switchVersionBtn"
+            class="transition-all duration-300 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 text-white hover:scale-105"
+          >
+            切換為LP版
+          </button>
+          <button
+            id="switchChartTypeBtn"
+            class="transition-all duration-300 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 text-white hover:scale-105"
+          >
+            切換為K線圖
+          </button>
+          <button
+            id="toggleDarkModeBtn"
+            class="transition-all duration-300 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-gray-800 text-gray-900 dark:text-white hover:scale-105"
+          >
+            切換深色模式
+          </button>
+          <!-- 旋轉屏幕按鈕，僅在直式介面時顯示 -->
+          <button
+            id="rotateScreenBtn"
+            class="hidden transition-all duration-300 bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-green-800 text-white hover:scale-105"
+          >
+            旋轉屏幕
+          </button>
+        </div>
+
+        <!-- 數據更新時間 -->
+        <p
+          class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400 text-center"
+          id="lastUpdated"
+        >
+          數據更新時間: 載入中...
+        </p>
+
+        <!-- 橫向提示 -->
+        <div
+          id="orientationGuide"
+          class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        >
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl text-center"
+          >
+            <p class="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+              請將設備翻轉為橫向以獲得更好的顯示效果
+            </p>
+            <button
+              id="dismissGuide"
+              class="bg-primary-600 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded transition-all duration-300 hover:scale-105"
+            >
+              我知道了
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 頁腳 -->
+      <footer
+        class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >作者：阿璋</span
+        >
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6"
+              >Developed by GPT</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      let currentVersion = "8591";
+      let chartType = "line";
+      let chartData;
+      let isPortrait = window.innerHeight > window.innerWidth;
+      let xRange = null;
+
+      function fetchData() {
+        return fetch("data.json")
+          .then((response) => response.json())
+          .then((jsonData) => {
+            chartData = processData(jsonData);
+            updateChart();
+            updateLastUpdated(jsonData);
+          })
+          .catch((error) => {
+            console.error("讀取數據時出錯：", error);
+          });
+      }
+
+      function processData(jsonData) {
+        jsonData.forEach((item) => {
+          var utcDateTime = new Date(item.datetime);
+          var taiwanDateTime = new Date(
+            utcDateTime.getTime() + 8 * 60 * 60 * 1000
+          );
+          item.datetime = taiwanDateTime;
+        });
+
+        var groupedData = {};
+        jsonData.forEach((item) => {
+          var dateKey = item.datetime.toISOString().split("T")[0];
+          if (!groupedData[dateKey]) {
+            groupedData[dateKey] = {
+              date: dateKey,
+              open: item.coin_value,
+              high: item.coin_value,
+              low: item.coin_value,
+              close: item.coin_value,
+              volume: item.quantity,
+              totalPrice: item.coin_value * item.quantity,
+              totalQuantity: item.quantity,
+            };
+          } else {
+            var group = groupedData[dateKey];
+            group.high = Math.max(group.high, item.coin_value);
+            group.low = Math.min(group.low, item.coin_value);
+            group.close = item.coin_value;
+            group.volume += item.quantity;
+            group.totalPrice += item.coin_value * item.quantity;
+            group.totalQuantity += item.quantity;
+          }
+        });
+
+        // 計算每日平均價，並四捨五入到整數
+        Object.values(groupedData).forEach((item) => {
+          item.average = Math.round(item.totalPrice / item.totalQuantity);
+          item.open = Math.round(item.open);
+          item.high = Math.round(item.high);
+          item.low = Math.round(item.low);
+          item.close = Math.round(item.close);
+          // 將成交量轉換為千位(K)單位，保留兩位小數
+          item.volumeK = parseFloat((item.volume / 1000).toFixed(2));
+        });
+
+        return Object.values(groupedData).sort(
+          (a, b) => new Date(a.date) - new Date(b.date)
+        );
+      }
+
+      function updateChart() {
+        const data = chartData.map((item) => ({
+          ...item,
+          open:
+            currentVersion === "LP" ? Math.round(item.open / 0.94) : item.open,
+          high:
+            currentVersion === "LP" ? Math.round(item.high / 0.94) : item.high,
+          low: currentVersion === "LP" ? Math.round(item.low / 0.94) : item.low,
+          close:
+            currentVersion === "LP"
+              ? Math.round(item.close / 0.94)
+              : item.close,
+          average:
+            currentVersion === "LP"
+              ? Math.round(item.average / 0.94)
+              : item.average,
+        }));
+
+        let traces;
+
+        if (chartType === "candlestick") {
+          traces = [
+            {
+              x: data.map((d) => d.date),
+              close: data.map((d) => d.close),
+              high: data.map((d) => d.high),
+              low: data.map((d) => d.low),
+              open: data.map((d) => d.open),
+              type: "candlestick",
+              xaxis: "x",
+              yaxis: "y1",
+              increasing: { line: { color: "#26a69a" } },
+              decreasing: { line: { color: "#ef5350" } },
+              name: "價格",
+              hovertemplate:
+                "日期: %{x}<br>" +
+                "開盤: %{open}萬<br>" +
+                "最高: %{high}萬<br>" +
+                "最低: %{low}萬<br>" +
+                "收盤: %{close}萬<br>" +
+                "<br>" +
+                "上漲: %{up}萬<br>" +
+                "下跌: %{down}萬<br>" +
+                "成交量: %{text}K<extra></extra>",
+              text: data.map((d) => d.volumeK),
+              customdata: data.map((d) => ({
+                up: d.close - d.open > 0 ? d.close - d.open : 0,
+                down: d.close - d.open < 0 ? d.open - d.close : 0,
+              })),
+              hovertemplate:
+                "日期: %{x}<br>" +
+                "開盤: %{open}萬<br>" +
+                "最高: %{high}萬<br>" +
+                "最低: %{low}萬<br>" +
+                "收盤: %{close}萬<br>" +
+                "<br>" +
+                "上漲: %{customdata.up}萬<br>" +
+                "下跌: %{customdata.down}萬<br>" +
+                "成交量: %{text}K<extra></extra>",
+            },
+          ];
+        } else {
+          traces = [
+            {
+              x: data.map((d) => d.date),
+              y: data.map((d) => d.average),
+              type: "scatter",
+              mode: "lines+markers",
+              line: { color: "#2196f3" },
+              yaxis: "y1",
+              name: "平均價格",
+              hovertemplate:
+                "日期: %{x}<br>" +
+                "平均價格: %{y}萬<br>" +
+                "成交量: %{text}K<extra></extra>",
+              text: data.map((d) => d.volumeK),
+            },
+          ];
+        }
+
+        // 成交量圖
+        const volumeTrace = {
+          x: data.map((d) => d.date),
+          y: data.map((d) => d.volumeK),
+          type: "bar",
+          xaxis: "x",
+          yaxis: "y2",
+          marker: {
+            color: data.map((d) => (d.close >= d.open ? "#26a69a" : "#ef5350")),
+          },
+          opacity: 0.5,
+          name: "成交量",
+          hoverinfo: "skip",
+          showlegend: false,
+        };
+
+        traces.push(volumeTrace);
+
+        const layout = {
+          dragmode: "pan",
+          showlegend: false,
+          xaxis: {
+            rangeslider: { visible: false },
+            type: "date",
+            range: xRange,
+            showgrid: false,
+            zeroline: false,
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+            tickformatstops: [
+              {
+                dtickrange: [null, 86400000 * 31], // 小於一個月
+                value: "%m-%d",
+              },
+              {
+                dtickrange: [86400000 * 31, null], // 大於一個月
+                value: "%Y-%m",
+              },
+            ],
+          },
+          yaxis: {
+            title: "價格",
+            side: "right",
+            domain: [0.2, 1], // 價格圖佔80%
+            fixedrange: false,
+            ticksuffix: "萬",
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+          },
+          yaxis2: {
+            title: "成交量",
+            side: "right",
+            domain: [0, 0.15], // 成交量圖佔15%
+            fixedrange: false,
+            ticksuffix: "K",
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+            anchor: "x",
+          },
+          grid: {
+            rows: 2,
+            columns: 1,
+            subplots: [["xy1"], ["xy2"]],
+            roworder: "top to bottom",
+          },
+          margin: {
+            t: 50,
+            b: 50,
+            l: 60,
+            r: 60,
+          },
+          plot_bgcolor: document.documentElement.classList.contains("dark")
+            ? "#1f2937"
+            : "#ffffff",
+          paper_bgcolor: document.documentElement.classList.contains("dark")
+            ? "#1f2937"
+            : "#ffffff",
+          font: {
+            family: "Noto Sans TC, sans-serif",
+            color: document.documentElement.classList.contains("dark")
+              ? "#ffffff"
+              : "#000000",
+          },
+          hovermode: "x unified",
+        };
+
+        Plotly.newPlot("chart", traces, layout, {
+          responsive: true,
+          displayModeBar: true,
+          modeBarButtonsToRemove: ["toImage", "sendDataToCloud"],
+          displaylogo: false,
+          scrollZoom: true,
+        });
+
+        // 添加事件監聽器，實現 Y 軸自動縮放
+        var chartDiv = document.getElementById("chart");
+        chartDiv.on("plotly_relayout", function (eventdata) {
+          // 檢查是否有 X 軸範圍的更新
+          if (eventdata["xaxis.range[0]"] || eventdata["xaxis.range[1]"]) {
+            var xStart = eventdata["xaxis.range[0]"]
+              ? new Date(eventdata["xaxis.range[0]"])
+              : new Date(data[0].date);
+            var xEnd = eventdata["xaxis.range[1]"]
+              ? new Date(eventdata["xaxis.range[1]"])
+              : new Date(data[data.length - 1].date);
+
+            // 根據新的 X 軸範圍過濾數據
+            var visibleData = data.filter(function (d) {
+              var date = new Date(d.date);
+              return date >= xStart && date <= xEnd;
+            });
+
+            if (visibleData.length > 0) {
+              // 計算價格的最小值和最大值
+              var yMin, yMax;
+              if (chartType === "candlestick") {
+                yMin = Math.min(...visibleData.map((d) => d.low));
+                yMax = Math.max(...visibleData.map((d) => d.high));
+              } else {
+                yMin = Math.min(...visibleData.map((d) => d.average));
+                yMax = Math.max(...visibleData.map((d) => d.average));
+              }
+
+              // 添加一點緩衝
+              var yRange = yMax - yMin;
+              yMin = yMin - yRange * 0.05;
+              yMax = yMax + yRange * 0.05;
+
+              // 成交量的最小值和最大值
+              var y2Min = 0;
+              var y2Max = Math.max(...visibleData.map((d) => d.volumeK));
+
+              // 添加一點緩衝
+              y2Max = y2Max + y2Max * 0.1;
+
+              // 保存 yaxis2 的最大值
+              yaxis2RangeMax = y2Max;
+
+              // 確保 yaxis 的最小值不與 yaxis2 的最大值重疊
+              if (yMin < yaxis2RangeMax) {
+                yMin = yaxis2RangeMax + yRange * 0.05;
+              }
+
+              // 更新 Y 軸範圍
+              Plotly.relayout("chart", {
+                "yaxis.autorange": false,
+                "yaxis.range": [yMin, yMax],
+                "yaxis2.autorange": false,
+                "yaxis2.range": [y2Min, y2Max],
+              });
+            }
+          }
+        });
+      }
+
+      function updateLastUpdated(jsonData) {
+        const lastData = new Date(jsonData[jsonData.length - 1].datetime);
+        const formattedTime = lastData.toLocaleString("zh-TW", {
+          timeZone: "Asia/Taipei",
+        });
+        document.getElementById("lastUpdated").textContent =
+          "數據更新時間: " + formattedTime;
+      }
+
+      function switchVersion() {
+        currentVersion = currentVersion === "8591" ? "LP" : "8591";
+        document.getElementById("switchVersionBtn").textContent = `切換為${
+          currentVersion === "LP" ? "8591" : "LP"
+        }版`;
+        updateChart();
+      }
+
+      function switchChartType() {
+        chartType = chartType === "line" ? "candlestick" : "line";
+        document.getElementById("switchChartTypeBtn").textContent = `切換為${
+          chartType === "line" ? "K線" : "折線"
+        }圖`;
+        updateChart();
+      }
+
+      function changeTimeFrame(frame) {
+        let endDate = new Date(chartData[chartData.length - 1].date);
+        let startDate = new Date(endDate);
+        switch (frame) {
+          case "1M":
+            startDate.setMonth(endDate.getMonth() - 1);
+            break;
+          case "3M":
+            startDate.setMonth(endDate.getMonth() - 3);
+            break;
+          case "6M":
+            startDate.setMonth(endDate.getMonth() - 6);
+            break;
+          case "1Y":
+            startDate.setFullYear(endDate.getFullYear() - 1);
+            break;
+          default:
+            startDate = new Date(chartData[0].date);
+        }
+        xRange = [
+          startDate.toISOString().split("T")[0],
+          endDate.toISOString().split("T")[0],
+        ];
+        updateChart();
+      }
+
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+        updateChart();
+      }
+
+      function rotateScreen() {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock("landscape").catch(function (error) {
+            alert("無法旋轉屏幕，請手動將設備轉為橫向。");
+          });
+        } else {
+          alert("您的設備不支援屏幕旋轉，請手動將設備轉為橫向。");
+        }
+      }
+
+      function checkOrientation() {
+        isPortrait = window.innerHeight > window.innerWidth;
+        const rotateBtn = document.getElementById("rotateScreenBtn");
+        if (isPortrait) {
+          document
+            .getElementById("orientationGuide")
+            .classList.remove("hidden");
+          rotateBtn.classList.remove("hidden");
+        } else {
+          document.getElementById("orientationGuide").classList.add("hidden");
+          rotateBtn.classList.add("hidden");
+        }
+        updateChart();
+      }
+
+      // 事件監聽器
+      document
+        .getElementById("switchVersionBtn")
+        .addEventListener("click", switchVersion);
+      document
+        .getElementById("switchChartTypeBtn")
+        .addEventListener("click", switchChartType);
+      document
+        .getElementById("toggleDarkModeBtn")
+        .addEventListener("click", toggleDarkMode);
+      document
+        .getElementById("rotateScreenBtn")
+        .addEventListener("click", rotateScreen);
+      document.getElementById("dismissGuide").addEventListener("click", () => {
+        document.getElementById("orientationGuide").classList.add("hidden");
+      });
+
+      window.addEventListener("resize", checkOrientation);
+      window.addEventListener("orientationchange", checkOrientation);
+
+      // 初始化
+      let yaxis2RangeMax = 0; // 用於存儲 yaxis2 的最大值
+      fetchData();
+      checkOrientation();
+    </script>
+  </body>
+</html>
